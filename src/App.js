@@ -21,9 +21,8 @@ function App() {
         <Navbar />
         <main>
           <Cursor />
-          
           <Routes>
-            <Route path="/home" element={<Home />} />
+            <Route path="" element={<Home />} />
             <Route path="/youtube" element={<YoutubeSection />} />
             <Route path="/docker-docs" element={<DockerDocsSection />} />
             <Route path="/blogs" element={<FccBlogsSection />} />
@@ -36,6 +35,7 @@ function App() {
         <Footer />
       </div>
     </Router>
+
   );
 }
 
