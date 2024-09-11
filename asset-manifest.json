@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/DevOps_Resources_Project/static/css/main.88266d39.css",
-    "main.js": "/DevOps_Resources_Project/static/js/main.c98ba9c6.js",
-    "static/js/453.42e0fb95.chunk.js": "/DevOps_Resources_Project/static/js/453.42e0fb95.chunk.js",
-    "static/media/2.png": "/DevOps_Resources_Project/static/media/2.00e0ded318a581cb72a1.png",
-    "static/media/3.jpg": "/DevOps_Resources_Project/static/media/3.c9c59151ea46da36c652.jpg",
-    "static/media/1.png": "/DevOps_Resources_Project/static/media/1.e19597aa48bbde039b2f.png",
-    "static/media/myPhoto.jpg": "/DevOps_Resources_Project/static/media/myPhoto.78fe77793fe46274ff8c.jpg",
-    "static/media/medium.png": "/DevOps_Resources_Project/static/media/medium.fb4319d40928634171f1.png",
-    "static/media/github.jpg": "/DevOps_Resources_Project/static/media/github.1979111babd8da97cedb.jpg",
-    "static/media/devops.png": "/DevOps_Resources_Project/static/media/devops.4a5fb8f8c0f384aaec1e.png",
-    "static/media/docker.png": "/DevOps_Resources_Project/static/media/docker.1ebe6237c97112a1f54e.png",
-    "static/media/randomBlogs.jpeg": "/DevOps_Resources_Project/static/media/randomBlogs.0004da8254a093ab3bdd.jpeg",
-    "index.html": "/DevOps_Resources_Project/index.html",
-    "main.88266d39.css.map": "/DevOps_Resources_Project/static/css/main.88266d39.css.map",
-    "main.c98ba9c6.js.map": "/DevOps_Resources_Project/static/js/main.c98ba9c6.js.map",
-    "453.42e0fb95.chunk.js.map": "/DevOps_Resources_Project/static/js/453.42e0fb95.chunk.js.map"
+    "main.css": "/DevOps_Resources_Project/home/static/css/main.88266d39.css",
+    "main.js": "/DevOps_Resources_Project/home/static/js/main.dde1023a.js",
+    "static/js/453.42e0fb95.chunk.js": "/DevOps_Resources_Project/home/static/js/453.42e0fb95.chunk.js",
+    "static/media/2.png": "/DevOps_Resources_Project/home/static/media/2.00e0ded318a581cb72a1.png",
+    "static/media/3.jpg": "/DevOps_Resources_Project/home/static/media/3.c9c59151ea46da36c652.jpg",
+    "static/media/1.png": "/DevOps_Resources_Project/home/static/media/1.e19597aa48bbde039b2f.png",
+    "static/media/myPhoto.jpg": "/DevOps_Resources_Project/home/static/media/myPhoto.78fe77793fe46274ff8c.jpg",
+    "static/media/medium.png": "/DevOps_Resources_Project/home/static/media/medium.fb4319d40928634171f1.png",
+    "static/media/github.jpg": "/DevOps_Resources_Project/home/static/media/github.1979111babd8da97cedb.jpg",
+    "static/media/devops.png": "/DevOps_Resources_Project/home/static/media/devops.4a5fb8f8c0f384aaec1e.png",
+    "static/media/docker.png": "/DevOps_Resources_Project/home/static/media/docker.1ebe6237c97112a1f54e.png",
+    "static/media/randomBlogs.jpeg": "/DevOps_Resources_Project/home/static/media/randomBlogs.0004da8254a093ab3bdd.jpeg",
+    "index.html": "/DevOps_Resources_Project/home/index.html",
+    "main.88266d39.css.map": "/DevOps_Resources_Project/home/static/css/main.88266d39.css.map",
+    "main.dde1023a.js.map": "/DevOps_Resources_Project/home/static/js/main.dde1023a.js.map",
+    "453.42e0fb95.chunk.js.map": "/DevOps_Resources_Project/home/static/js/453.42e0fb95.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.88266d39.css",
-    "static/js/main.c98ba9c6.js"
+    "static/js/main.dde1023a.js"
   ]
 }
