@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/DevOps_Resources_Project/static/css/main.88266d39.css",
-    "main.js": "/DevOps_Resources_Project/static/js/main.59f088ff.js",
+    "main.js": "/DevOps_Resources_Project/static/js/main.c98ba9c6.js",
     "static/js/453.42e0fb95.chunk.js": "/DevOps_Resources_Project/static/js/453.42e0fb95.chunk.js",
     "static/media/2.png": "/DevOps_Resources_Project/static/media/2.00e0ded318a581cb72a1.png",
     "static/media/3.jpg": "/DevOps_Resources_Project/static/media/3.c9c59151ea46da36c652.jpg",
@@ -14,11 +14,11 @@
     "static/media/randomBlogs.jpeg": "/DevOps_Resources_Project/static/media/randomBlogs.0004da8254a093ab3bdd.jpeg",
     "index.html": "/DevOps_Resources_Project/index.html",
     "main.88266d39.css.map": "/DevOps_Resources_Project/static/css/main.88266d39.css.map",
-    "main.59f088ff.js.map": "/DevOps_Resources_Project/static/js/main.59f088ff.js.map",
+    "main.c98ba9c6.js.map": "/DevOps_Resources_Project/static/js/main.c98ba9c6.js.map",
     "453.42e0fb95.chunk.js.map": "/DevOps_Resources_Project/static/js/453.42e0fb95.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.88266d39.css",
-    "static/js/main.59f088ff.js"
+    "static/js/main.c98ba9c6.js"
   ]
 }
