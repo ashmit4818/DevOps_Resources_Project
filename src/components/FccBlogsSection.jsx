@@ -1,0 +1,73 @@
+
+import React from 'react';
+import { Container, Card, CardContent, CardMedia, Typography } from '@mui/material';
+import Grid from '@mui/material/Grid2';
+
+import pic1 from '../assets/sectionimages/fcc/1.png';
+import pic2 from '../assets/sectionimages/fcc/2.png';
+import pic3 from '../assets/sectionimages/fcc/3.jpg';
+const FccBlogsSection = () => {
+  const blogs = [
+    {
+      id: 1,
+      title: 'What is DevOps? How Development + Operations Helps Teams Work More Efficiently',
+      description: 'In this tutorial, we will explore what DevOps is and why organizations should have DevOps specialists.',
+      link: 'https://www.freecodecamp.org/news/how-devops-works/',
+      image: pic1, // Replace with your image
+      alt: 'What is DevOps? How Development + Operations Helps Teams Work More Efficiently',
+    },
+    {
+      id: 2,
+      title: 'How to Use Git and GitHub – a Guide for Beginners and Experienced Developers',
+      description: 'This detailed guide is tailored to help you navigate the world of version control and collaboration.',
+      link: 'https://www.freecodecamp.org/news/guide-to-git-github-for-beginners-and-experienced-devs/',
+      image: pic2, // Replace with your image
+      alt: 'Version Control Git Github Tutorial',
+    },
+    {
+      id: 3,
+      title: 'A beginner’s comprehensive guide to Docker — how to create your first Docker application',
+      description: 'You are a developer and you want to start with Docker? This article is made for you.',
+      link: 'https://www.freecodecamp.org/news/a-beginners-guide-to-docker-how-to-create-your-first-docker-application-cc03de9b639f/',
+      image: pic3, // Replace with your image
+      alt: 'A beginner’s guide to Docker — how to create your first Docker application',
+    },
+  ];
+
+  return (
+    <Container style={{ padding: '20px', paddingTop: '5%', paddingBottom: '5%' }}>
+      <Typography variant="h4" gutterBottom align="center" sx={{ mb: '5%' }}>
+        FreeCodeCamp Blogs
+      </Typography>
+      <Grid container spacing={3}>
+        {blogs.map(({ id, title, description, link, image, alt }) => (
+          <Grid item size={{ xs: 12, sm: 6, md: 4 }} key={id}>
+            <Card >
+              <CardMedia
+                component="img"
+                height="100%"
+                image={image}
+                alt={alt}
+              />
+              <CardContent>
+                <Typography variant="h6" gutterBottom align="center">
+                  {title}
+                </Typography>
+                <Typography variant="body2" align="center">
+                  {description}
+                </Typography>
+                <Typography variant="body2" align="center" sx={{ mt: 2 }}>
+                  <a href={link} target="_blank" rel="noopener noreferrer">
+                    Read
+                  </a>
+                </Typography>
+              </CardContent>
+            </Card>
+          </Grid>
+        ))}
+      </Grid>
+    </Container>
+  );
+};
+
+export default FccBlogsSection;
