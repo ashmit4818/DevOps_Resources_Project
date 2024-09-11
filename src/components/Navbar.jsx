@@ -31,7 +31,7 @@ const Navbar = () => {
       }}
     >
       <List>
-        <ListItem button component={Link} to="/" onClick={handleDrawerToggle} style={isActive('/')}>
+        <ListItem button component={Link} to="/home" onClick={handleDrawerToggle} style={isActive('/')}>
           <ListItemIcon>
             <RiHome3Line style={{ color: 'white', fontSize: 28 }} /> {/* Updated Home icon */}
           </ListItemIcon>
@@ -86,7 +86,7 @@ const Navbar = () => {
       >
         <Toolbar>
           {/* DevOps SVG Icon */}
-          <IconButton edge="start" color="inherit" aria-label="logo" sx={{ ml: 2, mr: 2 }} component={Link} to="/">
+          <IconButton edge="start" color="inherit" aria-label="logo" sx={{ ml: 2, mr: 2 }} component={Link} to="/home">
             <img src={DevOpsIcon} alt="DevOps Icon" style={{ height: 50, width: 'auto', filter: 'brightness(0) invert(1)' }} />
           </IconButton>
 

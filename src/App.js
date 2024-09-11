@@ -21,10 +21,9 @@ function App() {
         <Navbar />
         <main>
           <Cursor />
-          {/* for any random path home will be visible */}
-          <Home/>
+          
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
             <Route path="/youtube" element={<YoutubeSection />} />
             <Route path="/docker-docs" element={<DockerDocsSection />} />
             <Route path="/blogs" element={<FccBlogsSection />} />
@@ -34,7 +33,7 @@ function App() {
 
           </Routes>
         </main>
-        <Footer /> {/* Add Footer component here */}
+        <Footer />
       </div>
     </Router>
   );
