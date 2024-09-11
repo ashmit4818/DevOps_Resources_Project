@@ -21,6 +21,8 @@ function App() {
         <Navbar />
         <main>
           <Cursor />
+          {/* for any random path home will be visible */}
+          <Home/>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/youtube" element={<YoutubeSection />} />
