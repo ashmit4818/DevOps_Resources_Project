@@ -22,7 +22,7 @@ function App() {
         <main>
           <Cursor />
           <Routes>
-            <Route path="/DevOps_Resources_Project" element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="/youtube" element={<YoutubeSection />} />
             <Route path="/docker-docs" element={<DockerDocsSection />} />
             <Route path="/blogs" element={<FccBlogsSection />} />
