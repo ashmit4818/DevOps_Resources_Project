@@ -2,7 +2,7 @@
   "name": "react_devops_resources",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ashmit4818.github.io",
+  "homepage": "https://ashmit4818.github.io/DevOps_Resources_Project",
   "dependencies": {
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
@@ -20,7 +20,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b main -d build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
