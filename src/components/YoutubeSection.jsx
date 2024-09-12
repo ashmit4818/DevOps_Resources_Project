@@ -2,24 +2,24 @@
 import React from 'react';
 import { Container, Card, CardContent, CardMedia, Typography } from '@mui/material';
 import Grid from '@mui/material/Grid2';
-import placeholderImage from '../assets/yt.png';
+import pic1 from '../assets/sectionimages/yt/1.jpg';
 
 const YoutubeSection = () => {
   const playlists = [
     {
       id: 1,
-      title: 'Introduction to DevOps with GitHub',
-      description: 'Learn the basics of DevOps and how GitHub plays a role in version control and collaboration.',
-      link: 'https://github.com/article1',
-      image: placeholderImage, // Replace with your image
-      alt: 'Introduction to DevOps with GitHub',
+      title: 'How to Deploy React App to GitHub Pages via GitHub Actions',
+      description: 'This tutorial will show you how to deploy a React app to Github Pages with Github Actions.',
+      link: 'https://www.youtube.com/watch?v=tjV7nVX9CAA',
+      image: pic1, // Replace with your image
+      alt: 'Deploy React App to GitHub Pages via GitHub Actions',
     },
     {
       id: 2,
       title: 'Version Control Best Practices',
       description: 'Best practices for version control using Git and GitHub in DevOps workflows.',
       link: 'https://github.com/article2',
-      image: placeholderImage, // Replace with your image
+      image: pic1, // Replace with your image
       alt: 'Version Control Best Practices',
     },
   ];
