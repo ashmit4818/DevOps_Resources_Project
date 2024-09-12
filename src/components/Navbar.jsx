@@ -42,7 +42,7 @@ const Navbar = () => {
           <ListItemIcon>
             <RiYoutubeLine style={{ color: 'white', fontSize: 28 }} /> {/* Updated YouTube icon */}
           </ListItemIcon>
-          <ListItemText primary="YouTube Playlists" />
+          <ListItemText primary="YouTube" />
         </ListItem>
 
         <ListItem button component={Link} to="/docker-docs" onClick={handleDrawerToggle} style={isActive('/docker-docs')}>
@@ -111,7 +111,7 @@ const Navbar = () => {
               Home
             </Button>
             <Button color="inherit" component={Link} to="/youtube" sx={isActive('/youtube')}>
-              YouTube Playlists
+              YouTube
             </Button>
             <Button color="inherit" component={Link} to="/docker-docs" sx={isActive('/docker-docs')}>
               Docker Docs

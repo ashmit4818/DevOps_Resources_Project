@@ -28,22 +28,6 @@ const cardData = [
     alt: "Placeholder 3",
     link: 'https://example.com/resource3' // Add link property
   },
-  {
-    id: 4,
-    title: "Placeholder 4",
-    description: "Description for Placeholder 4.",
-    image: placeholderImage, // Replace with your image
-    alt: "Placeholder 4",
-    link: 'https://example.com/resource4' // Add link property
-  },
-  {
-    id: 5,
-    title: "Placeholder 5",
-    description: "Description for Placeholder 5.",
-    image: placeholderImage, // Replace with your image
-    alt: "Placeholder 5",
-    link: 'https://example.com/resource5' // Add link property
-  },
 ];
 
 const DockerDocsSection = () => {

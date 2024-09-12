@@ -3,6 +3,7 @@ import React from 'react';
 import { Container, Card, CardContent, CardMedia, Typography } from '@mui/material';
 import Grid from '@mui/material/Grid2';
 import pic1 from '../assets/sectionimages/blogs/1.png';
+import pic2 from '../assets/sectionimages/blogs/2.png';
 // Replace with your placeholder image path
 
 const BlogsSection = () => {
@@ -17,10 +18,10 @@ const BlogsSection = () => {
     },
     {
       id: 2,
-      title: 'Version Control Best Practices',
-      description: 'Best practices for version control using Git and GitHub in DevOps workflows.',
-      link: 'https://github.com/article2',
-      image: pic1, // Replace with your image
+      title: 'Optimizing ReactJS App Deployment with Docker and Nginx',
+      description: 'In this blog post, we’ll explore how to Dockerize a ReactJS app for production using Nginx for better performance and load balancing.',
+      link: 'https://www.geeksforgeeks.org/how-to-dockerize-a-reactjs-app/',
+      image: pic2, // Replace with your image
       alt: 'Version Control Best Practices',
     },
   ];

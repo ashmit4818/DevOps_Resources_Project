@@ -8,7 +8,7 @@ ENV NODE_ENV production
 WORKDIR /app
 
 # Installing dependencies
-COPY ./package.json ./
+COPY ./package*.json ./
 RUN npm install
 
 # Copying all the files in our project
@@ -18,10 +18,14 @@ COPY . .
 RUN npm run build
 
 # Fetching the latest nginx image
-FROM nginx
+FROM nginx:alpine
 
 # Copying built assets from builder
 COPY --from=builder /app/build /usr/share/nginx/html
 
+EXPOSE 80
+
+# Command to run the web server.
+CMD ["nginx", "-g", "daemon off;"]
 # Copying our nginx.conf
-COPY nginx.conf /etc/nginx/conf.d/default.conf
+# COPY nginx.conf /etc/nginx/conf.d/default.conf

@@ -3,12 +3,12 @@ import React from 'react';
 import { Container, Card, CardContent, CardMedia, Typography } from '@mui/material';
 import Grid from '@mui/material/Grid2';
 import pic1 from '../assets/sectionimages/yt/1.jpg';
-
+import pic2 from '../assets/sectionimages/yt/2.jpg'; 
 const YoutubeSection = () => {
   const playlists = [
     {
       id: 1,
-      title: 'How to Deploy React App to GitHub Pages via GitHub Actions',
+      title: 'How to Deploy React App (create-react-app) to GitHub Pages via GitHub Actions.',
       description: 'This tutorial will show you how to deploy a React app to Github Pages with Github Actions.',
       link: 'https://www.youtube.com/watch?v=tjV7nVX9CAA',
       image: pic1, // Replace with your image
@@ -16,12 +16,12 @@ const YoutubeSection = () => {
     },
     {
       id: 2,
-      title: 'Version Control Best Practices',
-      description: 'Best practices for version control using Git and GitHub in DevOps workflows.',
-      link: 'https://github.com/article2',
-      image: pic1, // Replace with your image
-      alt: 'Version Control Best Practices',
-    },
+      title: 'Deploy React App (Vite) to GitHub Pages and Set up a workflow ofr Github Actions. ',
+      description: 'Learn how to configure your project, set up workflow, Vite config, and GitHub Pages. ',
+      link: 'https://www.youtube.com/watch?app=desktop&v=Bk28snjHr7c',
+      image: pic2, // Replace with your image
+      alt: 'Deploy Vite React App to GitHub Pages with Github Actions',
+    }
   ];
 
   return (

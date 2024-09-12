@@ -146,10 +146,10 @@ const Home = () => {
                 />
                 <CardContent>
                   <Typography variant="h6" gutterBottom align="center">
-                    YouTube Playlists
+                    YouTube
                   </Typography>
                   <Typography variant="body2" align="center">
-                    Watch curated YouTube playlists to get practical insights and tutorials on DevOps tools and practices.
+                    Watch curated YouTube Resources to get practical insights and tutorials on DevOps tools and practices.
                   </Typography>
                 </CardContent>
               </Card>
@@ -171,7 +171,7 @@ const Home = () => {
                     GitHub
                   </Typography>
                   <Typography variant="body2" align="center">
-                    Explore informative blogs on GitHub related to DevOps, Docker, Kubernetes, and CI/CD.
+                    Explore informative Repos on GitHub related to DevOps, Docker, Kubernetes, and CI/CD.
                   </Typography>
                 </CardContent>
               </Card>
