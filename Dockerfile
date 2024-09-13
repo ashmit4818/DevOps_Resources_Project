@@ -1,30 +1,29 @@
-# Fetching the latest node image on apline linux
-FROM node:alpine AS builder
+# Use the official Node.js image as the base image.
+FROM node:14 AS build
 
-# Declaring env
-ENV NODE_ENV production
-
-# Setting up the work directory
+# Set the working directory.
 WORKDIR /app
 
-# Installing dependencies
-COPY ./package.json ./
+# Copy package.json and package-lock.json.
+COPY package*.json ./
+
+# Install dependencies.
 RUN npm install
 
-# Copying all the files in our project
+# Copy the rest of the application code.
 COPY . .
 
-# Building our application
+# Build the React application.
 RUN npm run build
 
-# Fetching the latest nginx image
-FROM nginx
+# Use a lightweight web server to serve the static files.
+FROM nginx:alpine
 
-# Copying built assets from builder
-COPY --from=builder /app/build /usr/share/nginx/html
+# Copy the build output to the web server's directory.
+COPY --from=build /app/build /usr/share/nginx/html
 
+# Expose port 80 to the outside world.
+EXPOSE 80
 
 # Command to run the web server.
-# CMD ["nginx", "-g", "daemon off;"]
-# Copying our nginx.conf
-COPY nginx.conf /etc/nginx/conf.d/default.conf
+CMD ["nginx", "-g", "daemon off;"]

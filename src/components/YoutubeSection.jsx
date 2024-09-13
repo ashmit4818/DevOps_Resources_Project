@@ -4,7 +4,9 @@ import { Container, Card, CardContent, CardMedia, Typography } from '@mui/materi
 import Grid from '@mui/material/Grid2';
 import pic1 from '../assets/sectionimages/yt/1.jpg';
 import pic2 from '../assets/sectionimages/yt/2.jpg';
-import pic3 from '../assets/sectionimages/yt/3.jpg'; 
+import pic3 from '../assets/sectionimages/yt/3.jpg';
+import pic4 from '../assets/sectionimages/yt/4.jpg';
+
 const YoutubeSection = () => {
   const playlists = [
     {
@@ -30,6 +32,14 @@ const YoutubeSection = () => {
       link: 'https://www.youtube.com/playlist?list=PL9gnSGHSqcnoqBXdMwUTRod4Gi3eac2Ak',
       image: pic3, // Replace with your image
       alt: 'Complete DevOps Bootcamp by Kunal Kushwaha',
+    },
+    {
+      id: 4,
+      title: 'How To Deploy React App(with reactrouter) to gh-pages (Simplest Way) - gh-pages issue fixed',
+      description: 'Explained step-by-step how you can host your reactjs project on gh pages for free.',
+      link: 'https://www.youtube.com/playlist?list=PL9gnSGHSqcnoqBXdMwUTRod4Gi3eac2Ak',
+      image: pic4, // Replace with your image
+      alt: 'Deploy React App(with reactrouter) to gh-pages',
     }
   ];
 

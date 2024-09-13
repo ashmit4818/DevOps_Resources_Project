@@ -4,6 +4,7 @@ import { Link, useLocation } from 'react-router-dom';
 import MenuIcon from '@mui/icons-material/Menu';
 import { RiGithubLine, RiHome3Line, RiYoutubeLine, RiMediumLine } from 'react-icons/ri'; // Import icons from react-icons/ri
 import { LiaDocker } from 'react-icons/lia'; // Import Docker icon from react-icons/lia
+import { PiNotebookBold } from "react-icons/pi";
 import { LiaFreeCodeCamp } from "react-icons/lia";
 import DevOpsIcon from '../assets/devops.png'; // Custom DevOps icon
 
@@ -24,58 +25,58 @@ const Navbar = () => {
     <Box
       sx={{
         width: 250,
-        background: 'linear-gradient(180deg, #4169E1 30%, #1E3A8A 90%)', // Gradient background for drawer
+        background: 'linear-gradient(180deg, #4169E9 30%, #1E3A8A 90%)', // Gradient background for drawer
         height: '100%',
         color: 'white',
         paddingTop: '20px',
       }}
     >
       <List>
-        <ListItem button component={Link} to="/DevOps_Resources_Project" onClick={handleDrawerToggle} style={isActive('')}>
+        <ListItem button component={Link} to="/" onClick={handleDrawerToggle} style={isActive('')}>
           <ListItemIcon>
             <RiHome3Line style={{ color: 'white', fontSize: 28 }} /> {/* Updated Home icon */}
           </ListItemIcon>
-          <ListItemText primary="Home" />
+          <ListItemText primary="Home" style={{ color: 'white' }}/>
         </ListItem>
 
         <ListItem button component={Link} to="/youtube" onClick={handleDrawerToggle} style={isActive('/youtube')}>
           <ListItemIcon>
             <RiYoutubeLine style={{ color: 'white', fontSize: 28 }} /> {/* Updated YouTube icon */}
           </ListItemIcon>
-          <ListItemText primary="YouTube" />
+          <ListItemText primary="YouTube" style={{ color: 'white' }}/>
         </ListItem>
 
         <ListItem button component={Link} to="/docker-docs" onClick={handleDrawerToggle} style={isActive('/docker-docs')}>
           <ListItemIcon>
             <LiaDocker style={{ color: 'white', fontSize: 28 }} /> {/* Updated Docker icon */}
           </ListItemIcon>
-          <ListItemText primary="Docker Docs" />
+          <ListItemText primary="Docker Docs" style={{ color: 'white' }} />
         </ListItem>
 
         <ListItem button component={Link} to="/blogs" onClick={handleDrawerToggle} style={isActive('/blogs')}>
           <ListItemIcon>
             <LiaFreeCodeCamp style={{ color: 'white', fontSize: 28 }} /> {/* Updated FreeCodeCamp Blogs icon */}
           </ListItemIcon>
-          <ListItemText primary="FreeCodeCamp Blogs" /> {/* Updated label */}
+          <ListItemText primary="FreeCodeCamp Blogs" style={{ color: 'white' }} /> {/* Updated label */}
         </ListItem>
 
         <ListItem button component={Link} to="/medium-articles" onClick={handleDrawerToggle} style={isActive('/medium-articles')}>
           <ListItemIcon>
             <RiMediumLine style={{ color: 'white', fontSize: 28 }} /> {/* Updated Medium Articles icon */}
           </ListItemIcon>
-          <ListItemText primary="Medium Articles" />
+          <ListItemText primary="Medium Articles" style={{ color: 'white' }}/>
         </ListItem>
         <ListItem button component={Link} to="/github" onClick={handleDrawerToggle} style={isActive('/github')}>
           <ListItemIcon>
             <RiGithubLine style={{ color: 'white', fontSize: 28 }} /> {/* Updated Github icon */}
           </ListItemIcon>
-          <ListItemText primary="Github" />
+          <ListItemText primary="Github" style={{ color: 'white' }}/>
         </ListItem>
         <ListItem button component={Link} to="/random-blogs" onClick={handleDrawerToggle} style={isActive('/random-blogs')}>
           <ListItemIcon>
-            <RiMediumLine style={{ color: 'white', fontSize: 28 }} /> {/* Updated Blogs Section icon */}
+            <PiNotebookBold style={{ color: 'white', fontSize: 28 }} /> {/* Updated Blogs Section icon */}
           </ListItemIcon>
-          <ListItemText primary="Blogs" />
+          <ListItemText primary="Blogs" style={{ color: 'white' }}/>
         </ListItem>
       </List>
     </Box>
@@ -113,7 +114,7 @@ const Navbar = () => {
 
           {/* Links for larger screens */}
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-            <Button color="inherit" component={Link} to="/DevOps_Resources_Project" sx={isActive('')}>
+            <Button color="inherit" component={Link} to="/" sx={isActive('')}>
               Home
             </Button>
             <Button color="inherit" component={Link} to="/youtube" sx={isActive('/youtube')}>
