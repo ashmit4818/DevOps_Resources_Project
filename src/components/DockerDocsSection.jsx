@@ -2,7 +2,8 @@ import React from 'react';
 import { Container, Card, CardContent, CardMedia, Typography } from '@mui/material';
 import Grid from '@mui/material/Grid2';
 import pic1 from '../assets/sectionimages/docker/1.png'; // Replace with your placeholder image path
-
+import pic2 from '../assets/sectionimages/docker/2.png';
+import pic3 from '../assets/sectionimages/docker/3.png';
 const cardData = [
   {
     id: 1,
@@ -14,19 +15,19 @@ const cardData = [
   },
   {
     id: 2,
-    title: "Placeholder 2",
-    description: "Description for Placeholder 2.",
-    image: pic1, // Replace with your image
-    alt: "Placeholder 2",
-    link: 'https://example.com/resource2' // Add link property
+    title: "Publishing and exposing ports",
+    description: "Containers provide isolation for your application that is great for security and managing dependencies, but it also means you can’t access them directly.",
+    image: pic2, // Replace with your image
+    alt: "Publishing and exposing ports in Docker Containers",
+    link: 'https://docs.docker.com/get-started/docker-concepts/running-containers/publishing-ports/' // Add link property
   },
   {
     id: 3,
-    title: "Placeholder 3",
-    description: "Description for Placeholder 3.",
-    image: pic1, // Replace with your image
-    alt: "Placeholder 3",
-    link: 'https://example.com/resource3' // Add link property
+    title: "What is a container?",
+    description: "Docker container is a software package containing all elements needed to run an application, including the code, configuration files, and dependencies.",
+    image: pic3, // Replace with your image
+    alt: "What is a container?",
+    link: 'https://docs.docker.com/get-started/docker-concepts/the-basics/what-is-a-container/' // Add link property
   },
 ];
 

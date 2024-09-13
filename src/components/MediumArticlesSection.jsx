@@ -8,11 +8,11 @@ const MediumArticlesSection = () => {
   const articles = [
     {
       id: 1,
-      title: 'Introduction to DevOps with GitHub',
-      description: 'Learn the basics of DevOps and how GitHub plays a role in version control and collaboration.',
-      link: 'https://github.com/article1',
+      title: 'CI/CD Pipeline with React App using GitHub Actions.',
+      description: 'In this tutorial, I will illustrate how to handle CI and CD using GitHub actions and Build and push docker image to DockerHub.',
+      link: 'https://faun.pub/ci-cd-pipeline-with-react-app-using-github-actions-1b219d4e162f',
       image: placeholderImage, // Replace with your image
-      alt: 'Introduction to DevOps with GitHub',
+      alt: 'handle CI and CD using GitHub actions and Build and push docker image of React App to DockerHub.',
     },
     {
       id: 2,

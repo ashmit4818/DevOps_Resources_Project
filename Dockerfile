@@ -1,29 +1,21 @@
-# Use the official Node.js image as the base image.
-FROM node:14 AS build
+# Fetching the latest node image on alpine linux
+FROM node:alpine AS development
 
-# Set the working directory.
-WORKDIR /app
+# Declaring env
+ENV NODE_ENV development
 
-# Copy package.json and package-lock.json.
-COPY package*.json ./
+# Setting up the work directory
+WORKDIR /react_devops_resources
 
-# Install dependencies.
+# Installing dependencies
+COPY ./package*.json /react_devops_resources
+
 RUN npm install
 
-# Copy the rest of the application code.
+# Copying all the files in our project
 COPY . .
 
-# Build the React application.
-RUN npm run build
+EXPOSE 3000
 
-# Use a lightweight web server to serve the static files.
-FROM nginx:alpine
-
-# Copy the build output to the web server's directory.
-COPY --from=build /app/build /usr/share/nginx/html
-
-# Expose port 80 to the outside world.
-EXPOSE 80
-
-# Command to run the web server.
-CMD ["nginx", "-g", "daemon off;"]
+# Starting our application
+CMD ["npm","start"]
