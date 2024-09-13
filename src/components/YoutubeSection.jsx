@@ -3,7 +3,8 @@ import React from 'react';
 import { Container, Card, CardContent, CardMedia, Typography } from '@mui/material';
 import Grid from '@mui/material/Grid2';
 import pic1 from '../assets/sectionimages/yt/1.jpg';
-import pic2 from '../assets/sectionimages/yt/2.jpg'; 
+import pic2 from '../assets/sectionimages/yt/2.jpg';
+import pic3 from '../assets/sectionimages/yt/3.jpg'; 
 const YoutubeSection = () => {
   const playlists = [
     {
@@ -21,13 +22,21 @@ const YoutubeSection = () => {
       link: 'https://www.youtube.com/watch?app=desktop&v=Bk28snjHr7c',
       image: pic2, // Replace with your image
       alt: 'Deploy Vite React App to GitHub Pages with Github Actions',
+    },
+    {
+      id: 3,
+      title: 'Master DevOps from Beginner to Advanced Levels with Industrial Practices and Real-World Tools.',
+      description: 'Complete DevOps bootcamp to get you from beginner to advance in the field. ',
+      link: 'https://www.youtube.com/playlist?list=PL9gnSGHSqcnoqBXdMwUTRod4Gi3eac2Ak',
+      image: pic3, // Replace with your image
+      alt: 'Complete DevOps Bootcamp by Kunal Kushwaha',
     }
   ];
 
   return (
     <Container style={{ padding: '20px', paddingTop: '5%', paddingBottom: '5%' }}>
       <Typography variant="h4" gutterBottom align="center" sx={{ mb: '5%' }}>
-        Youtube Playlists
+        Youtube
       </Typography>
       <Grid container spacing={3}>
         {playlists.map(({ id, title, description, link, image, alt }) => (

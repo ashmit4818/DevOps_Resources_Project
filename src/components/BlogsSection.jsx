@@ -4,6 +4,7 @@ import { Container, Card, CardContent, CardMedia, Typography } from '@mui/materi
 import Grid from '@mui/material/Grid2';
 import pic1 from '../assets/sectionimages/blogs/1.png';
 import pic2 from '../assets/sectionimages/blogs/2.png';
+import pic3 from '../assets/sectionimages/blogs/3.png';
 // Replace with your placeholder image path
 
 const BlogsSection = () => {
@@ -23,6 +24,14 @@ const BlogsSection = () => {
       link: 'https://www.geeksforgeeks.org/how-to-dockerize-a-reactjs-app/',
       image: pic2, // Replace with your image
       alt: 'Version Control Best Practices',
+    },
+    {
+      id: 3,
+      title: 'React Router not working with Github Pages Solution',
+      description: 'In this blog post, we’ll explore how to use HashRouter instead of BrowserRouter from react-router package when deploying on github pages.',
+      link: 'https://stackoverflow.com/questions/71984401/react-router-not-working-with-github-pages',
+      image: pic3, // Replace with your image
+      alt: 'React Router not working with Github Pages',
     },
   ];
 

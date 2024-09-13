@@ -1,22 +1,22 @@
 import React from 'react';
 import { Container, Card, CardContent, CardMedia, Typography } from '@mui/material';
 import Grid from '@mui/material/Grid2';
-import placeholderImage from '../assets/docker.png'; // Replace with your placeholder image path
+import pic1 from '../assets/sectionimages/docker/1.png'; // Replace with your placeholder image path
 
 const cardData = [
   {
     id: 1,
-    title: "Placeholder 1",
-    description: "Description for Placeholder 1.",
-    image: placeholderImage, // Replace with your image
-    alt: "Placeholder 1",
-    link: 'https://example.com/resource1' // Add link property
+    title: "Docker architecture",
+    description: "Docker follows Client-Server architecture, which includes the three main components that are Docker Client, Docker Host, and Docker Registry.",
+    image: pic1, // Replace with your image
+    alt: "Overview of Docker Architecture.",
+    link: 'https://docs.docker.com/get-started/docker-overview/#docker-architecture' // Add link property
   },
   {
     id: 2,
     title: "Placeholder 2",
     description: "Description for Placeholder 2.",
-    image: placeholderImage, // Replace with your image
+    image: pic1, // Replace with your image
     alt: "Placeholder 2",
     link: 'https://example.com/resource2' // Add link property
   },
@@ -24,7 +24,7 @@ const cardData = [
     id: 3,
     title: "Placeholder 3",
     description: "Description for Placeholder 3.",
-    image: placeholderImage, // Replace with your image
+    image: pic1, // Replace with your image
     alt: "Placeholder 3",
     link: 'https://example.com/resource3' // Add link property
   },

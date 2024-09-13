@@ -26,7 +26,7 @@ const GithubBlogsSection = () => {
   return (
     <Container style={{ padding: '20px', paddingTop: '5%', paddingBottom: '5%' }}>
       <Typography variant="h4" gutterBottom align="center" sx={{ mb: '5%' }}>
-        GitHub Blogs
+        GitHub Repos
       </Typography>
       <Grid container spacing={3}>
         {githubBlogs.map(({ id, title, description, link, image, alt }) => (

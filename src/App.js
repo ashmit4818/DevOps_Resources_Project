@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import YoutubeSection from './components/YoutubeSection';
@@ -16,13 +16,13 @@ import './App.css';
 
 function App() {
   return (
-    <Router basename='/'>
+    <Router basename='/DevOps_Resources_Project'>
       <div id="root">
         <Navbar />
         <main>
           <Cursor />
           <Routes>
-            <Route path="" element={<Home />} />
+            <Route path="/DevOps_Resources_Project" element={<Home />} />
             <Route path="/youtube" element={<YoutubeSection />} />
             <Route path="/docker-docs" element={<DockerDocsSection />} />
             <Route path="/blogs" element={<FccBlogsSection />} />

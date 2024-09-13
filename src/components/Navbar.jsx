@@ -31,7 +31,7 @@ const Navbar = () => {
       }}
     >
       <List>
-        <ListItem button component={Link} to="" onClick={handleDrawerToggle} style={isActive('')}>
+        <ListItem button component={Link} to="/DevOps_Resources_Project" onClick={handleDrawerToggle} style={isActive('')}>
           <ListItemIcon>
             <RiHome3Line style={{ color: 'white', fontSize: 28 }} /> {/* Updated Home icon */}
           </ListItemIcon>
@@ -71,6 +71,12 @@ const Navbar = () => {
           </ListItemIcon>
           <ListItemText primary="Github" />
         </ListItem>
+        <ListItem button component={Link} to="/random-blogs" onClick={handleDrawerToggle} style={isActive('/random-blogs')}>
+          <ListItemIcon>
+            <RiMediumLine style={{ color: 'white', fontSize: 28 }} /> {/* Updated Blogs Section icon */}
+          </ListItemIcon>
+          <ListItemText primary="Blogs" />
+        </ListItem>
       </List>
     </Box>
   );
@@ -107,7 +113,7 @@ const Navbar = () => {
 
           {/* Links for larger screens */}
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-            <Button color="inherit" component={Link} to="" sx={isActive('')}>
+            <Button color="inherit" component={Link} to="/DevOps_Resources_Project" sx={isActive('')}>
               Home
             </Button>
             <Button color="inherit" component={Link} to="/youtube" sx={isActive('/youtube')}>
@@ -124,6 +130,9 @@ const Navbar = () => {
             </Button>
             <Button color="inherit" component={Link} to="/github" sx={isActive('/github')}>
               Github
+            </Button>
+            <Button color="inherit" component={Link} to="/random-blogs" sx={isActive('/random-blogs')}>
+              Blogs Section
             </Button>
           </Box>
         </Toolbar>

@@ -1,70 +1,24 @@
-/* Custom cursor styles */
+* {
+    cursor: none; /* Effectively hides the default cursor */
+  }
+
 .cursor {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 20px;
-    height: 20px;
-    background: rgba(0, 122, 255, 0.3); /* Blue color for cursor background */
+    width: 10px;
+    height: 10px;
+    border: 5px solid white; /* White border */
     border-radius: 50%;
-    transform: translate(calc(var(--x) - 50%), calc(var(--y) - 50%));
-    transition: 
-      width 0.1s cubic-bezier(.25, .25, .42, 1),
-      height 0.1s cubic-bezier(.25, .25, .42, 1),
-      transform 0.1s cubic-bezier(.25, .25, .42, 1);
-    z-index: 9999;
-    pointer-events: none;
-    will-change: transform;
-    
-    @media (pointer: fine) {
-      display: block;
-    }
-
-    &::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      border-radius: 50%;
-      border: 2px solid rgba(0, 122, 255, 0.5); /* Less intense blue border */
-      opacity: var(--scale);
-      transform: scale(var(--scale));
-      transition: 
-        opacity 0.3s cubic-bezier(.25, .25, .42, 1),
-        transform 0.3s cubic-bezier(.25, .25, .42, 1),
-        border-radius 0.1s cubic-bezier(.25, .25, .42, 1);
-    }
-}
-
-/* Cursor glowing trail effect */
-.cursor-trail {
     position: fixed;
-    width: 8px; /* Smaller size for the trail */
-    height: 8px; /* Smaller size for the trail */
-    border-radius: 50%;
-    background: rgba(0, 122, 255, 0.5); /* Less intense blue color for trail */
-    box-shadow: 0 0 5px rgba(0, 122, 255, 0.5), 0 0 10px rgba(0, 122, 255, 0.5); /* Less intense glow */
     pointer-events: none;
-    animation: trailAnimation 0.5s ease-out forwards;
-    will-change: transform, opacity;
-}
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    transition: transform 0.1s ease, opacity 0.1s ease;
+    mix-blend-mode: difference; /* Ensures it stays visible on both light and dark backgrounds */
 
-/* Keyframes for the glowing trail fade and movement */
-@keyframes trailAnimation {
-    0% {
-        transform: scale(1);
-        opacity: 1;
-    }
-    100% {
-        transform: scale(0.5);
-        opacity: 0;
-    }
-}
+    /* Position from JavaScript */
+    left: var(--x);
+    top: var(--y);
+  }
 
-/* Hide default cursor globally */
-body, a, button {
-    cursor: none; /* Ensure the default cursor is hidden everywhere, even on links and buttons */
-}
+  a:hover {
+    cursor: none; /* This hides the default cursor when hovering over links */
+  }
