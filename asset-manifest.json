@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/DevOps_Resources_Project/static/css/main.b9fb6a94.css",
-    "main.js": "/DevOps_Resources_Project/static/js/main.e70f2cb9.js",
+    "main.js": "/DevOps_Resources_Project/static/js/main.4cd47a20.js",
     "static/js/453.42e0fb95.chunk.js": "/DevOps_Resources_Project/static/js/453.42e0fb95.chunk.js",
     "static/media/randomBlogs.png": "/DevOps_Resources_Project/static/media/randomBlogs.4de5f218aced6a0c8b47.png",
     "static/media/3.png": "/DevOps_Resources_Project/static/media/3.2749714adc795d174215.png",
@@ -19,11 +19,11 @@
     "static/media/docker.png": "/DevOps_Resources_Project/static/media/docker.1ebe6237c97112a1f54e.png",
     "index.html": "/DevOps_Resources_Project/index.html",
     "main.b9fb6a94.css.map": "/DevOps_Resources_Project/static/css/main.b9fb6a94.css.map",
-    "main.e70f2cb9.js.map": "/DevOps_Resources_Project/static/js/main.e70f2cb9.js.map",
+    "main.4cd47a20.js.map": "/DevOps_Resources_Project/static/js/main.4cd47a20.js.map",
     "453.42e0fb95.chunk.js.map": "/DevOps_Resources_Project/static/js/453.42e0fb95.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b9fb6a94.css",
-    "static/js/main.e70f2cb9.js"
+    "static/js/main.4cd47a20.js"
   ]
 }
