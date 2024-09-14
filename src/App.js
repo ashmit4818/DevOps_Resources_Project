@@ -43,7 +43,7 @@ function App() {
         <main>
         {!isMobile && <Cursor />} {/* Only render Cursor if not on mobile */}
           <Routes>
-            <Route exact path="/" element={<Home />} />
+            <Route exact path="/" element={<Home isMobile={isMobile} />} />
             <Route path="/youtube" element={<YoutubeSection />} />
             <Route path="/docker-docs" element={<DockerDocsSection />} />
             <Route path="/blogs" element={<FccBlogsSection />} />

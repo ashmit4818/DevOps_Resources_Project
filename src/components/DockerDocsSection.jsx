@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { Container, Card, CardContent, CardMedia, Typography, Button } from '@mui/material';
 import { ThemeContext } from '../contexts/ThemeContext';
 import Grid from '@mui/material/Grid2';
-import pic1 from '../assets/sectionimages/docker/1.png'; // Replace with your placeholder image path
+import pic1 from '../assets/sectionimages/docker/1.png';
 import pic2 from '../assets/sectionimages/docker/2.png';
 import pic3 from '../assets/sectionimages/docker/3.png';
 const cardData = [
@@ -10,25 +10,25 @@ const cardData = [
     id: 1,
     title: "Docker architecture",
     description: "Docker follows Client-Server architecture, which includes the three main components that are Docker Client, Docker Host, and Docker Registry.",
-    image: pic1, // Replace with your image
+    image: pic1,
     alt: "Overview of Docker Architecture.",
-    link: 'https://docs.docker.com/get-started/docker-overview/#docker-architecture' // Add link property
+    link: 'https://docs.docker.com/get-started/docker-overview/#docker-architecture' 
   },
   {
     id: 2,
     title: "Publishing and exposing ports",
     description: "Containers provide isolation for your application that is great for security and managing dependencies, but it also means you can’t access them directly.",
-    image: pic2, // Replace with your image
+    image: pic2,
     alt: "Publishing and exposing ports in Docker Containers",
-    link: 'https://docs.docker.com/get-started/docker-concepts/running-containers/publishing-ports/' // Add link property
+    link: 'https://docs.docker.com/get-started/docker-concepts/running-containers/publishing-ports/'
   },
   {
     id: 3,
     title: "What is a container?",
     description: "Docker container is a software package containing all elements needed to run an application, including the code, configuration files, and dependencies.",
-    image: pic3, // Replace with your image
+    image: pic3,
     alt: "What is a container?",
-    link: 'https://docs.docker.com/get-started/docker-concepts/the-basics/what-is-a-container/' // Add link property
+    link: 'https://docs.docker.com/get-started/docker-concepts/the-basics/what-is-a-container/'
   },
 ];
 
@@ -51,7 +51,7 @@ const DockerDocsSection = () => {
                 image={image}
                 alt={alt}
                 sx={{
-                  backgroundColor: isDarkMode ? '#333' : '#fff', // Set background color for dark mode
+                  backgroundColor: isDarkMode ? '#333' : '#fff',
                 }}
               />
               <CardContent>
@@ -75,7 +75,7 @@ const DockerDocsSection = () => {
                     padding: '10px 20px',
                     transition: 'background-color 0.3s ease',
                     '&:hover': {
-                      backgroundColor: isDarkMode? '#262626':'#1b3887', // Change hover color to black
+                      backgroundColor: isDarkMode? '#262626':'#1b3887',
                     },
                   }}
                 >

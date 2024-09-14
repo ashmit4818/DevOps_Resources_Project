@@ -15,7 +15,7 @@ const YoutubeSection = () => {
       title: 'How to Deploy React App (create-react-app) to GitHub Pages via GitHub Actions.',
       description: 'This tutorial will show you how to deploy a React app to Github Pages with Github Actions.',
       link: 'https://www.youtube.com/watch?v=tjV7nVX9CAA',
-      image: pic1, // Replace with your image
+      image: pic1,
       alt: 'Deploy React App to GitHub Pages via GitHub Actions',
     },
     {
@@ -23,7 +23,7 @@ const YoutubeSection = () => {
       title: 'Deploy React App (Vite) to GitHub Pages and Set up a workflow ofr Github Actions. ',
       description: 'Learn how to configure your project, set up workflow, Vite config, and GitHub Pages. ',
       link: 'https://www.youtube.com/watch?app=desktop&v=Bk28snjHr7c',
-      image: pic2, // Replace with your image
+      image: pic2,
       alt: 'Deploy Vite React App to GitHub Pages with Github Actions',
     },
     {
@@ -31,7 +31,7 @@ const YoutubeSection = () => {
       title: 'Master DevOps from Beginner to Advanced Levels with Industrial Practices and Real-World Tools.',
       description: 'Complete DevOps bootcamp to get you from beginner to advance in the field. ',
       link: 'https://www.youtube.com/playlist?list=PL9gnSGHSqcnoqBXdMwUTRod4Gi3eac2Ak',
-      image: pic3, // Replace with your image
+      image: pic3,
       alt: 'Complete DevOps Bootcamp by Kunal Kushwaha',
     },
     {
@@ -39,7 +39,7 @@ const YoutubeSection = () => {
       title: 'How To Deploy React App(with reactrouter) to gh-pages (Simplest Way) - gh-pages issue fixed',
       description: 'Explained step-by-step how you can host your reactjs project on gh pages for free.',
       link: 'https://www.youtube.com/playlist?list=PL9gnSGHSqcnoqBXdMwUTRod4Gi3eac2Ak',
-      image: pic4, // Replace with your image
+      image: pic4,
       alt: 'Deploy React App(with reactrouter) to gh-pages',
     }
   ];
@@ -60,7 +60,7 @@ const YoutubeSection = () => {
                 image={image}
                 alt={alt}
                 sx={{
-                  backgroundColor: isDarkMode ? '#333' : '#fff', // Set background color for dark mode
+                  backgroundColor: isDarkMode ? '#333' : '#fff',
                 }}
               />
               <CardContent>
@@ -85,7 +85,7 @@ const YoutubeSection = () => {
                     padding: '10px 20px',
                     transition: 'background-color 0.3s ease',
                     '&:hover': {
-                      backgroundColor: isDarkMode? '#262626':'#1b3887', // Change hover color to black
+                      backgroundColor: isDarkMode? '#262626':'#1b3887',
                     },
                   }}
                 >

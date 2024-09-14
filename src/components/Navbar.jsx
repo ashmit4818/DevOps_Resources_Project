@@ -3,11 +3,11 @@ import { AppBar, Toolbar, Typography, IconButton, Drawer, List, ListItem, ListIt
 import { ThemeContext } from '../contexts/ThemeContext';
 import { Link, useLocation } from 'react-router-dom';
 import MenuIcon from '@mui/icons-material/Menu';
-import { RiGithubLine, RiHome3Line, RiYoutubeLine, RiMediumLine } from 'react-icons/ri'; // Import icons from react-icons/ri
-import { LiaDocker } from 'react-icons/lia'; // Import Docker icon from react-icons/lia
+import { RiGithubLine, RiHome3Line, RiYoutubeLine, RiMediumLine } from 'react-icons/ri';
+import { LiaDocker } from 'react-icons/lia';
 import { PiNotebookBold } from "react-icons/pi";
 import { LiaFreeCodeCamp } from "react-icons/lia";
-import DevOpsIcon from '../assets/devops.png'; // Custom DevOps icon
+import DevOpsIcon from '../assets/devops.png';
 
 const Navbar = ({ isMobile }) => {
 
@@ -37,47 +37,47 @@ const Navbar = ({ isMobile }) => {
       <List>
         <ListItem button component={Link} to="/" onClick={handleDrawerToggle} style={isActive('')}>
           <ListItemIcon>
-            <RiHome3Line style={{ color: 'white', fontSize: 28 }} /> {/* Updated Home icon */}
+            <RiHome3Line style={{ color: 'white', fontSize: 28 }} />
           </ListItemIcon>
           <ListItemText primary="Home" style={{ color: 'white' }}/>
         </ListItem>
 
         <ListItem button component={Link} to="/youtube" onClick={handleDrawerToggle} style={isActive('/youtube')}>
           <ListItemIcon>
-            <RiYoutubeLine style={{ color: 'white', fontSize: 28 }} /> {/* Updated YouTube icon */}
+            <RiYoutubeLine style={{ color: 'white', fontSize: 28 }} />
           </ListItemIcon>
           <ListItemText primary="YouTube" style={{ color: 'white' }}/>
         </ListItem>
 
         <ListItem button component={Link} to="/docker-docs" onClick={handleDrawerToggle} style={isActive('/docker-docs')}>
           <ListItemIcon>
-            <LiaDocker style={{ color: 'white', fontSize: 28 }} /> {/* Updated Docker icon */}
+            <LiaDocker style={{ color: 'white', fontSize: 28 }} />
           </ListItemIcon>
           <ListItemText primary="Docker Docs" style={{ color: 'white' }} />
         </ListItem>
 
         <ListItem button component={Link} to="/blogs" onClick={handleDrawerToggle} style={isActive('/blogs')}>
           <ListItemIcon>
-            <LiaFreeCodeCamp style={{ color: 'white', fontSize: 28 }} /> {/* Updated FreeCodeCamp Blogs icon */}
+            <LiaFreeCodeCamp style={{ color: 'white', fontSize: 28 }} />
           </ListItemIcon>
-          <ListItemText primary="FreeCodeCamp Blogs" style={{ color: 'white' }} /> {/* Updated label */}
+          <ListItemText primary="FreeCodeCamp Blogs" style={{ color: 'white' }} />
         </ListItem>
 
         <ListItem button component={Link} to="/medium-articles" onClick={handleDrawerToggle} style={isActive('/medium-articles')}>
           <ListItemIcon>
-            <RiMediumLine style={{ color: 'white', fontSize: 28 }} /> {/* Updated Medium Articles icon */}
+            <RiMediumLine style={{ color: 'white', fontSize: 28 }} />
           </ListItemIcon>
           <ListItemText primary="Medium Articles" style={{ color: 'white' }}/>
         </ListItem>
         <ListItem button component={Link} to="/github" onClick={handleDrawerToggle} style={isActive('/github')}>
           <ListItemIcon>
-            <RiGithubLine style={{ color: 'white', fontSize: 28 }} /> {/* Updated Github icon */}
+            <RiGithubLine style={{ color: 'white', fontSize: 28 }} />
           </ListItemIcon>
           <ListItemText primary="Github" style={{ color: 'white' }}/>
         </ListItem>
         <ListItem button component={Link} to="/random-blogs" onClick={handleDrawerToggle} style={isActive('/random-blogs')}>
           <ListItemIcon>
-            <PiNotebookBold style={{ color: 'white', fontSize: 28 }} /> {/* Updated Blogs Section icon */}
+            <PiNotebookBold style={{ color: 'white', fontSize: 28 }} />
           </ListItemIcon>
           <ListItemText primary="Blogs" style={{ color: 'white' }}/>
         </ListItem>
@@ -87,7 +87,6 @@ const Navbar = ({ isMobile }) => {
 
   return (
     <>
-      {/* AppBar with linear gradient */}
       <AppBar
         position="static"
         sx={{

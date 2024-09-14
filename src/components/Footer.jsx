@@ -65,7 +65,6 @@ const Footer = ({ isMobile }) => {
           </IconButton>
         </Box>
 
-        {/* Tagline */}
         <Typography variant="body1" >
           Made with ❤️ by Ashmit
         </Typography>

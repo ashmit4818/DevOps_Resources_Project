@@ -15,7 +15,7 @@ const MediumArticlesSection = () => {
       title: 'CI/CD Pipeline with React App using GitHub Actions',
       description: 'In this tutorial, I will illustrate how to handle CI and CD using GitHub actions and Build and push docker image to DockerHub.',
       link: 'https://faun.pub/ci-cd-pipeline-with-react-app-using-github-actions-1b219d4e162f',
-      image: pic1, // Replace with your image
+      image: pic1,
       alt: 'Handle CI and CD using GitHub actions and Build and push docker image of React App to DockerHub.',
     },
     {
@@ -23,7 +23,7 @@ const MediumArticlesSection = () => {
       title: 'Set Up a Kubernetes Development Environment Locally with Minikube',
       description: 'In this article, I will walk through the steps needed to set up a Kubernetes development environment locally using Minikube.',
       link: 'https://medium.com/@AlexanderObregon/setting-up-a-kubernetes-development-environment-locally-with-minikube-7462ed071b39',
-      image: pic2, // Replace with your image
+      image: pic2,
       alt: 'Set Up a Kubernetes Development Environment Locally with Minikube',
     },
     {
@@ -31,7 +31,7 @@ const MediumArticlesSection = () => {
       title: 'Introduction to Linux - Linux for Beginners',
       description: 'If you are a beginner who has no idea about Linux Operating System I recommend giving this article a quick read.',
       link: 'https://medium.com/geekculture/introduction-to-linux-8745d214e7be',
-      image: pic3, // Replace with your image
+      image: pic3,
       alt: 'Introduction to Linux - Linux for Beginners',
     },
   ];
@@ -52,7 +52,7 @@ const MediumArticlesSection = () => {
                 image={image}
                 alt={alt}
                 sx={{
-                  backgroundColor: isDarkMode ? '#333' : '#fff', // Set background color for dark mode
+                  backgroundColor: isDarkMode ? '#333' : '#fff',
                 }}
               />
               <CardContent>
@@ -77,7 +77,7 @@ const MediumArticlesSection = () => {
                     padding: '10px 20px',
                     transition: 'background-color 0.3s ease',
                     '&:hover': {
-                      backgroundColor: isDarkMode? '#262626':'#1b3887', // Change hover color to black
+                      backgroundColor: isDarkMode? '#262626':'#1b3887',
                     },
                   }}
                 >

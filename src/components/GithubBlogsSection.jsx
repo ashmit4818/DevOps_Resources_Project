@@ -2,7 +2,7 @@ import React, {useContext} from 'react';
 import { Container, Card, CardContent, CardMedia, Typography, Button } from '@mui/material';
 import { ThemeContext } from '../contexts/ThemeContext';
 import Grid from '@mui/material/Grid2';
-import pic1 from '../assets/sectionimages/github/1.png'; // Replace with your placeholder image path
+import pic1 from '../assets/sectionimages/github/1.png';
 import pic2 from '../assets/sectionimages/github/2.jpg';
 import pic3 from '../assets/sectionimages/github/3.jpg';
 const githubBlogs = [
@@ -11,7 +11,7 @@ const githubBlogs = [
     title: 'Understanding GitHub Actions',
     description: 'Learn the basics of GitHub Actions, including core concepts and essential terminology.',
     link: 'https://docs.github.com/en/actions/about-github-actions/understanding-github-actions',
-    image: pic1, // Replace with your image
+    image: pic1,
     alt: 'Understanding GitHub Actions',
   },
   {
@@ -19,7 +19,7 @@ const githubBlogs = [
     title: 'About workflows in Github Actions',
     description: 'Get a high-level overview of GitHub workflows, including triggers, syntax, and advanced features.',
     link: 'https://docs.github.com/en/actions/writing-workflows/about-workflows',
-    image: pic2, // Replace with your image
+    image: pic2,
     alt: 'About workflows in Github Actions',
   },
   {
@@ -27,7 +27,7 @@ const githubBlogs = [
     title: 'DevOps and SRE Excercises',
     description: ' This repo contains questions and exercises on various technical topics, related to DevOps and SRE',
     link: 'https://github.com/bregman-arie/devops-exercises',
-    image: pic3, // Replace with your image
+    image: pic3,
     alt: 'DevOps and SRE Excercises',
   },
 ];
@@ -50,7 +50,7 @@ const GithubBlogsSection = () => {
                 image={image}
                 alt={alt}
                 sx={{
-                  backgroundColor: isDarkMode ? '#333' : '#fff', // Set background color for dark mode
+                  backgroundColor: isDarkMode ? '#333' : '#fff',
                 }}
               />
               <CardContent>
@@ -75,7 +75,7 @@ const GithubBlogsSection = () => {
                     padding: '10px 20px',
                     transition: 'background-color 0.3s ease',
                     '&:hover': {
-                      backgroundColor: isDarkMode? '#262626':'#1b3887', // Change hover color to black
+                      backgroundColor: isDarkMode? '#262626':'#1b3887',
                     },
                   }}
                 >

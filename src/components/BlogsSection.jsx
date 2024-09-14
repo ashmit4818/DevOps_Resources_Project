@@ -6,7 +6,6 @@ import Grid from '@mui/material/Grid2';
 import pic1 from '../assets/sectionimages/blogs/1.png';
 import pic2 from '../assets/sectionimages/blogs/2.png';
 import pic3 from '../assets/sectionimages/blogs/3.png';
-// Replace with your placeholder image path
 
 const BlogsSection = () => {
 
@@ -16,7 +15,7 @@ const BlogsSection = () => {
       title: 'Automated React Deployment with GitHub Actions',
       description: 'In this blog post, we\'ll explore how to leverage GitHub Actions for Automated React Deployment with GitHub Actions',
       link: 'https://codeparrot.ai/blogs/automated-react-deployment-with-github-actions',
-      image: pic1, // Replace with your image
+      image: pic1, 
       alt: 'Introduction to DevOps with GitHub',
     },
     {
@@ -24,7 +23,7 @@ const BlogsSection = () => {
       title: 'Optimizing ReactJS App Deployment with Docker and Nginx',
       description: 'In this blog post, we’ll explore how to Dockerize a ReactJS app for production using Nginx for better performance and load balancing.',
       link: 'https://www.geeksforgeeks.org/how-to-dockerize-a-reactjs-app/',
-      image: pic2, // Replace with your image
+      image: pic2, 
       alt: 'Version Control Best Practices',
     },
     {
@@ -32,7 +31,7 @@ const BlogsSection = () => {
       title: 'React Router not working with Github Pages Solution',
       description: 'In this blog post, we’ll explore how to use HashRouter instead of BrowserRouter from react-router package when deploying on github pages.',
       link: 'https://stackoverflow.com/questions/71984401/react-router-not-working-with-github-pages',
-      image: pic3, // Replace with your image
+      image: pic3, 
       alt: 'React Router not working with Github Pages',
     },
   ];
@@ -42,7 +41,6 @@ const BlogsSection = () => {
 
   return (
 
-    
     <Container style={{ padding: '20px', paddingTop: '5%', paddingBottom: '5%' }}>
       <Typography variant="h4" gutterBottom align="center" sx={{ mb: '5%' }}>
         Blogs
@@ -58,7 +56,7 @@ const BlogsSection = () => {
                 image={image}
                 alt={alt}
                 sx={{
-                  backgroundColor: '#fff', // Set background color for dark mode
+                  backgroundColor: '#fff', 
                 }}
               />
               <CardContent>
@@ -83,7 +81,7 @@ const BlogsSection = () => {
                     padding: '10px 20px',
                     transition: 'background-color 0.3s ease',
                     '&:hover': {
-                      backgroundColor: isDarkMode? '#262626':'#1b3887', // Change hover color to black
+                      backgroundColor: isDarkMode? '#262626':'#1b3887', 
                     },
                   }}
                 >
