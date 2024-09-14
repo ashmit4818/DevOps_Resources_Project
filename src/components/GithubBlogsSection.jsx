@@ -1,24 +1,24 @@
 import React from 'react';
 import { Container, Card, CardContent, CardMedia, Typography } from '@mui/material';
 import Grid from '@mui/material/Grid2';
-import placeholderImage from '../assets/github.jpg'; // Replace with your placeholder image path
+import pic1 from '../assets/sectionimages/github/1.png'; // Replace with your placeholder image path
 
 const githubBlogs = [
   {
     id: 1,
-    title: 'Introduction to DevOps with GitHub',
-    description: 'Learn the basics of DevOps and how GitHub plays a role in version control and collaboration.',
-    link: 'https://github.com/article1',
-    image: placeholderImage, // Replace with your image
-    alt: 'Introduction to DevOps with GitHub',
+    title: 'Understanding GitHub Actions',
+    description: 'Learn the basics of GitHub Actions, including core concepts and essential terminology.',
+    link: 'https://docs.github.com/en/actions/about-github-actions/understanding-github-actions',
+    image: pic1, // Replace with your image
+    alt: 'Understanding GitHub Actions',
   },
   {
     id: 2,
-    title: 'Version Control Best Practices',
-    description: 'Best practices for version control using Git and GitHub in DevOps workflows.',
-    link: 'https://github.com/article2',
-    image: placeholderImage, // Replace with your image
-    alt: 'Version Control Best Practices',
+    title: 'About workflows in Github Actions',
+    description: 'Get a high-level overview of GitHub Actions workflows, including triggers, syntax, and advanced features.',
+    link: 'https://docs.github.com/en/actions/writing-workflows/about-workflows',
+    image: pic1, // Replace with your image
+    alt: 'About workflows in Github Actions',
   },
 ];
 
@@ -26,7 +26,7 @@ const GithubBlogsSection = () => {
   return (
     <Container style={{ padding: '20px', paddingTop: '5%', paddingBottom: '5%' }}>
       <Typography variant="h4" gutterBottom align="center" sx={{ mb: '5%' }}>
-        GitHub Repos
+        GitHub
       </Typography>
       <Grid container spacing={3}>
         {githubBlogs.map(({ id, title, description, link, image, alt }) => (
