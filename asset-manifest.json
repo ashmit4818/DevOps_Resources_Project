@@ -1,16 +1,17 @@
 {
   "files": {
     "main.css": "/DevOps_Resources_Project/static/css/main.b9fb6a94.css",
-    "main.js": "/DevOps_Resources_Project/static/js/main.ebe15d6a.js",
+    "main.js": "/DevOps_Resources_Project/static/js/main.f9dd067a.js",
     "static/js/453.42e0fb95.chunk.js": "/DevOps_Resources_Project/static/js/453.42e0fb95.chunk.js",
-    "static/media/1.png": "/DevOps_Resources_Project/static/media/1.e19597aa48bbde039b2f.png",
-    "static/media/2.png": "/DevOps_Resources_Project/static/media/2.4fb76a72536f1856e881.png",
     "static/media/3.png": "/DevOps_Resources_Project/static/media/3.2749714adc795d174215.png",
+    "static/media/1.png": "/DevOps_Resources_Project/static/media/1.6a7d0d6ce47b6a0a10d4.png",
+    "static/media/2.png": "/DevOps_Resources_Project/static/media/2.4fb76a72536f1856e881.png",
     "static/media/4.jpg": "/DevOps_Resources_Project/static/media/4.1815baf70a7f6b5abd4b.jpg",
     "static/media/3.jpg": "/DevOps_Resources_Project/static/media/3.418bbdf087bbce930227.jpg",
     "static/media/2.jpg": "/DevOps_Resources_Project/static/media/2.e1a9295113ee70e52631.jpg",
     "static/media/myPhoto.jpg": "/DevOps_Resources_Project/static/media/myPhoto.78fe77793fe46274ff8c.jpg",
     "static/media/1.jpg": "/DevOps_Resources_Project/static/media/1.45c1d893ccb4b0b10d58.jpg",
+    "static/media/2.jpeg": "/DevOps_Resources_Project/static/media/2.7740b5a5003987794369.jpeg",
     "static/media/medium.png": "/DevOps_Resources_Project/static/media/medium.fb4319d40928634171f1.png",
     "static/media/github.jpg": "/DevOps_Resources_Project/static/media/github.1979111babd8da97cedb.jpg",
     "static/media/devops.png": "/DevOps_Resources_Project/static/media/devops.4a5fb8f8c0f384aaec1e.png",
@@ -18,11 +19,11 @@
     "static/media/randomBlogs.jpeg": "/DevOps_Resources_Project/static/media/randomBlogs.0004da8254a093ab3bdd.jpeg",
     "index.html": "/DevOps_Resources_Project/index.html",
     "main.b9fb6a94.css.map": "/DevOps_Resources_Project/static/css/main.b9fb6a94.css.map",
-    "main.ebe15d6a.js.map": "/DevOps_Resources_Project/static/js/main.ebe15d6a.js.map",
+    "main.f9dd067a.js.map": "/DevOps_Resources_Project/static/js/main.f9dd067a.js.map",
     "453.42e0fb95.chunk.js.map": "/DevOps_Resources_Project/static/js/453.42e0fb95.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b9fb6a94.css",
-    "static/js/main.ebe15d6a.js"
+    "static/js/main.f9dd067a.js"
   ]
 }
