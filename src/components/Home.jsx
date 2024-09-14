@@ -41,7 +41,7 @@ const Home = () => {
           </Grid>
 
           {/* Right side: Motivational paragraph */}
-          <Grid item size={{ xs: 12, md: 6 }} >
+          <Grid item size={{ xs: 12, md: 6 }} textAlign="center">
               <Typography variant="h4" gutterBottom>
                 From Web Dev to DevOps 🚀
               </Typography>
