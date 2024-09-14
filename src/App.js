@@ -11,6 +11,8 @@ import GithubBlogsSection from './components/GithubBlogsSection';
 import FccBlogsSection from './components/FccBlogsSection';
 import Cursor from './components/Cursor';
 import Footer from './components/Footer';
+// import ThemeSwitchButton from './components/ThemeSwitchButton';
+import ThemeProvider from './contexts/ThemeContext';
 import '../src/assets/css/customCursor.css';
 import './App.css';
 
@@ -34,9 +36,10 @@ function App() {
 
 
   return (
+    <ThemeProvider>
     <Router basename='/DevOps_Resources_Project'>
       <div id="root">
-        <Navbar />
+        <Navbar isMobile={isMobile}/>
         <main>
         {!isMobile && <Cursor />} {/* Only render Cursor if not on mobile */}
           <Routes>
@@ -50,9 +53,11 @@ function App() {
 
           </Routes>
         </main>
-        <Footer />
+        <Footer isMobile={isMobile} />
+        {/* <ThemeSwitchButton /> */}
       </div>
     </Router>
+    </ThemeProvider>
 
   );
 }

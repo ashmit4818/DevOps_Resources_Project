@@ -1,6 +1,7 @@
 // src/components/Home.js
-import React from 'react';
+import React  from 'react';
 import { Container, Typography, Box, Card, CardContent, CardMedia } from '@mui/material';
+
 import Grid from '@mui/material/Grid2';
 import { Link } from 'react-router-dom';
 import myPhoto from '../assets/myPhoto.jpg';
@@ -9,9 +10,10 @@ import youtubeImage from '../assets/yt.png';
 import mediumImage from '../assets/medium.png';
 import GithubImage from '../assets/github.jpg'
 import fccImage from '../assets/fcc.png';
-import randomBlogsImage from '../assets/randomBlogs.jpeg';
+import randomBlogsImage from '../assets/randomBlogs.png';
 
 const Home = () => {
+
   return (
     <>
       <Container style={{ marginTop: '5%' }}>
@@ -39,18 +41,18 @@ const Home = () => {
           </Grid>
 
           {/* Right side: Motivational paragraph */}
-          <Grid item size={{ xs: 12, md: 6 }} textAlign="center">
+          <Grid item size={{ xs: 12, md: 6 }} >
               <Typography variant="h4" gutterBottom>
                 From Web Dev to DevOps 🚀
               </Typography>
               <Typography variant="body1" paragraph>
-                At VIT Bhopal, my journey in Computer Science ignited a passion for web development 💻, especially with React ⚛️. But as I built more apps, I craved something bigger—industrial-level practices!
+              At VIT Bhopal, my journey in Computer Science sparked my passion for web development 💻, especially with React ⚛️ and Material-UI. But as I developed more projects, I wanted to take them further—into the world of industrial-level practices like continuous integration and automated deployments.
               </Typography>
               <Typography variant="body1" paragraph>
-                Enter DevOps, where tools like Docker 🐳 and Kubernetes 🛠️ unlocked the power of automation and scalability. It’s more than just coding; it's about creating efficient, real-world solutions.
+              That’s where DevOps comes in! With tools like Docker 🐳 and Kubernetes 🛠️, I discovered the power of automation, scalability, and efficiency. Combining my web development skills with DevOps practices has allowed me to create streamlined, real-world solutions like the DevOps Resources Hub. It’s not just about coding anymore; it’s about building systems that make an impact.
               </Typography>
               <Typography variant="body1" paragraph>
-                DevOps is about learning, growing, and implementing skills that make an impact. Let’s build something remarkable together! 💪
+              DevOps is about constant growth and innovation—let’s build something remarkable together! 💪
               </Typography>
            </Grid>
 
@@ -77,6 +79,9 @@ const Home = () => {
                   height="100%"
                   image={dockerImage}
                   alt="Docker Docs"
+                  sx={{
+                    backgroundColor: '#fff', // Set background color for dark mode
+                  }}
                 />
                 <CardContent>
                   <Typography variant="h6" gutterBottom align="center">

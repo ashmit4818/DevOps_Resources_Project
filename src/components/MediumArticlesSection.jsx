@@ -1,6 +1,7 @@
 
-import React from 'react';
-import { Container, Card, CardContent, CardMedia, Typography } from '@mui/material';
+import React , {useContext} from 'react';
+import { Container, Card, CardContent, CardMedia, Typography, Button } from '@mui/material';
+import { ThemeContext } from '../contexts/ThemeContext';
 import Grid from '@mui/material/Grid2';
 import pic1 from '../assets/sectionimages/medium/1.png';
 import pic2 from '../assets/sectionimages/medium/2.jpeg';
@@ -34,6 +35,7 @@ const MediumArticlesSection = () => {
       alt: 'Introduction to Linux - Linux for Beginners',
     },
   ];
+  const { isDarkMode } = useContext(ThemeContext);
 
   return (
     <Container style={{ padding: '20px', paddingTop: '5%', paddingBottom: '5%' }}>
@@ -49,6 +51,9 @@ const MediumArticlesSection = () => {
                 height="100%"
                 image={image}
                 alt={alt}
+                sx={{
+                  backgroundColor: isDarkMode ? '#333' : '#fff', // Set background color for dark mode
+                }}
               />
               <CardContent>
                 <Typography variant="h6" gutterBottom align="center">
@@ -58,9 +63,26 @@ const MediumArticlesSection = () => {
                   {description}
                 </Typography>
                 <Typography variant="body2" align="center" sx={{ mt: 2 }}>
-                  <a href={link} target="_blank" rel="noopener noreferrer">
-                    Read on Medium
-                  </a>
+                <Button
+                  variant="contained"
+                  color="primary"
+                  href={link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  sx={{
+                    textDecoration: 'none',
+                    borderRadius: '10px',
+                    backgroundColor: isDarkMode? '#333':'',
+                    color: isDarkMode? '#fff':'',
+                    padding: '10px 20px',
+                    transition: 'background-color 0.3s ease',
+                    '&:hover': {
+                      backgroundColor: isDarkMode? '#262626':'#1b3887', // Change hover color to black
+                    },
+                  }}
+                >
+                  Read on Medium
+                </Button>
                 </Typography>
               </CardContent>
             </Card>

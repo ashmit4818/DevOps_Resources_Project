@@ -1,17 +1,19 @@
-import React from 'react';
+import React , {useContext} from 'react';
 import { Box, Typography, Container, IconButton } from '@mui/material';
+import { ThemeContext } from '../contexts/ThemeContext';
 import { GitHub, LinkedIn, Instagram } from '@mui/icons-material';
 import XIcon from '@mui/icons-material/X';
 
-const Footer = () => {
+const Footer = ({ isMobile }) => {
+  const { isDarkMode } = useContext(ThemeContext);
   return (
     <Box
       component="footer"
       sx={{
-        backgroundColor: '#1b3887',
+        backgroundColor: isDarkMode ? '#000':  '#1b3887',
         color: '#fff',
         py: 2,
-        mt: 'auto',
+        mt: isMobile ? '12%' : 'auto',
         boxShadow: '0px -3px 8px rgba(0, 0, 0, 0.2)',
       }}
     >

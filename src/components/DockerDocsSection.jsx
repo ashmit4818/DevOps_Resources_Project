@@ -1,5 +1,6 @@
-import React from 'react';
-import { Container, Card, CardContent, CardMedia, Typography } from '@mui/material';
+import React, { useContext } from 'react';
+import { Container, Card, CardContent, CardMedia, Typography, Button } from '@mui/material';
+import { ThemeContext } from '../contexts/ThemeContext';
 import Grid from '@mui/material/Grid2';
 import pic1 from '../assets/sectionimages/docker/1.png'; // Replace with your placeholder image path
 import pic2 from '../assets/sectionimages/docker/2.png';
@@ -32,6 +33,9 @@ const cardData = [
 ];
 
 const DockerDocsSection = () => {
+
+  const { isDarkMode } = useContext(ThemeContext);
+
   return (
     <Container style={{ padding: '20px', paddingTop: '5%', paddingBottom: '5%' }}>
       <Typography variant="h4" gutterBottom align="center" sx={{ mb: '5%' }}>
@@ -46,6 +50,9 @@ const DockerDocsSection = () => {
                 height="100%"
                 image={image}
                 alt={alt}
+                sx={{
+                  backgroundColor: isDarkMode ? '#333' : '#fff', // Set background color for dark mode
+                }}
               />
               <CardContent>
                 <Typography variant="h6" gutterBottom align="center">
@@ -55,9 +62,25 @@ const DockerDocsSection = () => {
                   {description}
                 </Typography>
                 <Typography variant="body2" align="center" sx={{ mt: 2 }}>
-                  <a href={link} target="_blank" rel="noopener noreferrer">
-                    Read on Docker Docs
-                  </a>
+                <Button
+                  variant="contained"
+                  href={link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  sx={{
+                    textDecoration: 'none',
+                    borderRadius: '10px',
+                    backgroundColor: isDarkMode? '#333':'',
+                    color: isDarkMode? '#fff':'',
+                    padding: '10px 20px',
+                    transition: 'background-color 0.3s ease',
+                    '&:hover': {
+                      backgroundColor: isDarkMode? '#262626':'#1b3887', // Change hover color to black
+                    },
+                  }}
+                >
+                  Read on Docker Docs
+                </Button>
                 </Typography>
               </CardContent>
             </Card>

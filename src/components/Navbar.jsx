@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { AppBar, Toolbar, Typography, IconButton, Drawer, List, ListItem, ListItemText, ListItemIcon, Box, Button } from '@mui/material';
+import { ThemeContext } from '../contexts/ThemeContext';
 import { Link, useLocation } from 'react-router-dom';
 import MenuIcon from '@mui/icons-material/Menu';
 import { RiGithubLine, RiHome3Line, RiYoutubeLine, RiMediumLine } from 'react-icons/ri'; // Import icons from react-icons/ri
@@ -8,7 +9,9 @@ import { PiNotebookBold } from "react-icons/pi";
 import { LiaFreeCodeCamp } from "react-icons/lia";
 import DevOpsIcon from '../assets/devops.png'; // Custom DevOps icon
 
-const Navbar = () => {
+const Navbar = ({ isMobile }) => {
+
+  const { isDarkMode } = useContext(ThemeContext);
   const [mobileOpen, setMobileOpen] = useState(false);
   const location = useLocation();
 
@@ -18,16 +21,16 @@ const Navbar = () => {
   };
 
   // Apply active link styles based on current location
-  const isActive = (path) => location.pathname === path ? { backgroundColor: '#3a7bd5', color: '#fff' } : {};
+  const isActive = (path) => location.pathname === path ? { backgroundColor: isDarkMode ?  '#333' : '#064cae' , color: '#fff' } : {};
 
   // Drawer content for mobile view
   const drawer = (
     <Box
       sx={{
         width: 250,
-        background: 'linear-gradient(180deg, #4169E9 30%, #1E3A8A 90%)', // Gradient background for drawer
+        backgroundColor: isDarkMode ? '#000' : '#1b3887',
+        color: '#fff',
         height: '100%',
-        color: 'white',
         paddingTop: '20px',
       }}
     >
@@ -88,7 +91,9 @@ const Navbar = () => {
       <AppBar
         position="static"
         sx={{
-          background: 'linear-gradient(45deg, #0B2F9F 30%, #1E3A8A 90%)', // Royal blue gradient
+          backgroundColor: isDarkMode ? '#000' : '#1b3887',
+          color: '#fff',
+          mb : isMobile ? '8%' : '0',
         }}
       >
         <Toolbar>

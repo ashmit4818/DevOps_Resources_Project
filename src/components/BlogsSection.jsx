@@ -1,6 +1,7 @@
 
-import React from 'react';
-import { Container, Card, CardContent, CardMedia, Typography } from '@mui/material';
+import React, {useContext} from 'react';
+import { Container, Card, CardContent, CardMedia, Typography, Button } from '@mui/material';
+import { ThemeContext } from '../contexts/ThemeContext';
 import Grid from '@mui/material/Grid2';
 import pic1 from '../assets/sectionimages/blogs/1.png';
 import pic2 from '../assets/sectionimages/blogs/2.png';
@@ -8,6 +9,7 @@ import pic3 from '../assets/sectionimages/blogs/3.png';
 // Replace with your placeholder image path
 
 const BlogsSection = () => {
+
   const blogs = [
     {
       id: 1,
@@ -34,8 +36,13 @@ const BlogsSection = () => {
       alt: 'React Router not working with Github Pages',
     },
   ];
+  const { isDarkMode } = useContext(ThemeContext);
+
+
 
   return (
+
+    
     <Container style={{ padding: '20px', paddingTop: '5%', paddingBottom: '5%' }}>
       <Typography variant="h4" gutterBottom align="center" sx={{ mb: '5%' }}>
         Blogs
@@ -43,12 +50,16 @@ const BlogsSection = () => {
       <Grid container spacing={3}>
         {blogs.map(({ id, title, description, link, image, alt }) => (
           <Grid item size={{ xs: 12, sm: 6, md: 4 }} key={id}>
-            <Card >
+            <Card
+             >
               <CardMedia
                 component="img"
                 height="100%"
                 image={image}
                 alt={alt}
+                sx={{
+                  backgroundColor: '#fff', // Set background color for dark mode
+                }}
               />
               <CardContent>
                 <Typography variant="h6" gutterBottom align="center">
@@ -58,9 +69,26 @@ const BlogsSection = () => {
                   {description}
                 </Typography>
                 <Typography variant="body2" align="center" sx={{ mt: 2 }}>
-                  <a href={link} target="_blank" rel="noopener noreferrer">
-                    Read
-                  </a>
+                <Button
+                  variant="contained"
+                  color="primary"
+                  href={link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  sx={{
+                    textDecoration: 'none',
+                    borderRadius: '10px',
+                    backgroundColor: isDarkMode? '#333':'',
+                    color: isDarkMode? '#fff':'',
+                    padding: '10px 20px',
+                    transition: 'background-color 0.3s ease',
+                    '&:hover': {
+                      backgroundColor: isDarkMode? '#262626':'#1b3887', // Change hover color to black
+                    },
+                  }}
+                >
+                  Read
+                </Button>
                 </Typography>
               </CardContent>
             </Card>
