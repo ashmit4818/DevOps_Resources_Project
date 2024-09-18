@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/DevOps_Resources_Project/static/css/main.b9fb6a94.css",
-    "main.js": "/DevOps_Resources_Project/static/js/main.88187ff2.js",
+    "main.js": "/DevOps_Resources_Project/static/js/main.896d12f0.js",
     "static/js/453.42e0fb95.chunk.js": "/DevOps_Resources_Project/static/js/453.42e0fb95.chunk.js",
     "static/media/randomBlogs.png": "/DevOps_Resources_Project/static/media/randomBlogs.5c231d5d8b6e2fcbb331.png",
     "static/media/3.png": "/DevOps_Resources_Project/static/media/3.709ce6974f2037a1151c.png",
@@ -11,17 +11,18 @@
     "static/media/4.jpg": "/DevOps_Resources_Project/static/media/4.426b5de9ee147bf00d01.jpg",
     "static/media/3.jpg": "/DevOps_Resources_Project/static/media/3.e5f2a92755c29538b8fb.jpg",
     "static/media/myPhoto.jpg": "/DevOps_Resources_Project/static/media/myPhoto.22f6b490a2e0d3c0832c.jpg",
+    "static/media/4.png": "/DevOps_Resources_Project/static/media/4.2cc3af82f1bcccd4f329.png",
     "static/media/1.jpg": "/DevOps_Resources_Project/static/media/1.07f2c3fcdcc2a5fc4d3d.jpg",
     "static/media/devops.png": "/DevOps_Resources_Project/static/media/devops.4a5fb8f8c0f384aaec1e.png",
     "static/media/2.jpeg": "/DevOps_Resources_Project/static/media/2.f0a77a37468015c21161.jpeg",
     "static/media/docker.png": "/DevOps_Resources_Project/static/media/docker.e3e8dbea5f09d93aa35d.png",
     "index.html": "/DevOps_Resources_Project/index.html",
     "main.b9fb6a94.css.map": "/DevOps_Resources_Project/static/css/main.b9fb6a94.css.map",
-    "main.88187ff2.js.map": "/DevOps_Resources_Project/static/js/main.88187ff2.js.map",
+    "main.896d12f0.js.map": "/DevOps_Resources_Project/static/js/main.896d12f0.js.map",
     "453.42e0fb95.chunk.js.map": "/DevOps_Resources_Project/static/js/453.42e0fb95.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b9fb6a94.css",
-    "static/js/main.88187ff2.js"
+    "static/js/main.896d12f0.js"
   ]
 }
