@@ -6,6 +6,7 @@ import Grid from '@mui/material/Grid2';
 import pic1 from '../assets/sectionimages/fcc/1.png';
 import pic2 from '../assets/sectionimages/fcc/2.png';
 import pic3 from '../assets/sectionimages/fcc/3.jpg';
+import pic4 from '../assets/sectionimages/fcc/4.png';
 
 
 const FccBlogsSection = () => {
@@ -33,6 +34,14 @@ const FccBlogsSection = () => {
       link: 'https://www.freecodecamp.org/news/a-beginners-guide-to-docker-how-to-create-your-first-docker-application-cc03de9b639f/',
       image: pic3,
       alt: 'A beginner’s guide to Docker — how to create your first Docker application',
+    },
+    {
+      id: 4,
+      title: 'AWS Basics for DevOps – How to Setup a Linux Machine, How to connect AWS instance using Putty.',
+      description: 'In this article, you will learn how to create a server on AWS and connect to it using putty.',
+      link: 'https://www.freecodecamp.org/news/aws-basics-for-devops/',
+      image: pic4,
+      alt: 'AWS Basics for DevOps – How to Setup a Linux Machine, How to connect AWS instance using Putty.',
     },
   ];
   const { isDarkMode } = useContext(ThemeContext);
