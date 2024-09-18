@@ -7,7 +7,7 @@ import pic1 from '../assets/sectionimages/fcc/1.png';
 import pic2 from '../assets/sectionimages/fcc/2.png';
 import pic3 from '../assets/sectionimages/fcc/3.jpg';
 import pic4 from '../assets/sectionimages/fcc/4.png';
-
+import pic5 from '../assets/sectionimages/fcc/5.png';
 
 const FccBlogsSection = () => {
   const blogs = [
@@ -43,6 +43,15 @@ const FccBlogsSection = () => {
       image: pic4,
       alt: 'AWS Basics for DevOps – How to Setup a Linux Machine, How to connect AWS instance using Putty.',
     },
+    {
+      id: 5,
+      title: 'How to Contribute to Open-Source Projects – Git & GitHub Workflow for Beginners',
+      description: 'In this guide, I\'ll walk you by testing basic Git, GitHub workflow when contributing to open-source projects.',
+      link: 'https://www.freecodecamp.org/news/git-and-github-workflow-for-open-source/',
+      image: pic5,
+      alt: 'How to Contribute to Open-Source Projects',
+    },
+    
   ];
   const { isDarkMode } = useContext(ThemeContext);
 
