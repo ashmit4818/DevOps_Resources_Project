@@ -1,12 +1,11 @@
 {
   "files": {
     "main.css": "/DevOps_Resources_Project/static/css/main.b9fb6a94.css",
-    "main.js": "/DevOps_Resources_Project/static/js/main.17477768.js",
+    "main.js": "/DevOps_Resources_Project/static/js/main.c72244be.js",
     "static/js/453.42e0fb95.chunk.js": "/DevOps_Resources_Project/static/js/453.42e0fb95.chunk.js",
     "static/media/randomBlogs.png": "/DevOps_Resources_Project/static/media/randomBlogs.5c231d5d8b6e2fcbb331.png",
     "static/media/3.png": "/DevOps_Resources_Project/static/media/3.709ce6974f2037a1151c.png",
     "static/media/1.png": "/DevOps_Resources_Project/static/media/1.e7ab7f305605398017ec.png",
-    "static/media/5.png": "/DevOps_Resources_Project/static/media/5.27cf2b9febed2fb55b04.png",
     "static/media/2.png": "/DevOps_Resources_Project/static/media/2.07bc2dcec71fd484a6de.png",
     "static/media/2.jpg": "/DevOps_Resources_Project/static/media/2.7814c22015de2cd42097.jpg",
     "static/media/4.jpg": "/DevOps_Resources_Project/static/media/4.426b5de9ee147bf00d01.jpg",
@@ -14,16 +13,17 @@
     "static/media/myPhoto.jpg": "/DevOps_Resources_Project/static/media/myPhoto.22f6b490a2e0d3c0832c.jpg",
     "static/media/4.png": "/DevOps_Resources_Project/static/media/4.2cc3af82f1bcccd4f329.png",
     "static/media/1.jpg": "/DevOps_Resources_Project/static/media/1.07f2c3fcdcc2a5fc4d3d.jpg",
+    "static/media/5.png": "/DevOps_Resources_Project/static/media/5.96242e7f14f4a7f5ab25.png",
     "static/media/devops.png": "/DevOps_Resources_Project/static/media/devops.4a5fb8f8c0f384aaec1e.png",
     "static/media/2.jpeg": "/DevOps_Resources_Project/static/media/2.f0a77a37468015c21161.jpeg",
     "static/media/docker.png": "/DevOps_Resources_Project/static/media/docker.e3e8dbea5f09d93aa35d.png",
     "index.html": "/DevOps_Resources_Project/index.html",
     "main.b9fb6a94.css.map": "/DevOps_Resources_Project/static/css/main.b9fb6a94.css.map",
-    "main.17477768.js.map": "/DevOps_Resources_Project/static/js/main.17477768.js.map",
+    "main.c72244be.js.map": "/DevOps_Resources_Project/static/js/main.c72244be.js.map",
     "453.42e0fb95.chunk.js.map": "/DevOps_Resources_Project/static/js/453.42e0fb95.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b9fb6a94.css",
-    "static/js/main.17477768.js"
+    "static/js/main.c72244be.js"
   ]
 }
