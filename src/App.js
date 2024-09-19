@@ -37,7 +37,7 @@ function App() {
 
   return (
     <ThemeProvider>
-    <Router basename='/DevOps_Resources_Project'>
+    <Router basename='/'>
       <div id="root">
         <Navbar isMobile={isMobile}/>
         <main>

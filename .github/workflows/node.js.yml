@@ -1,52 +1,18 @@
-# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
-
-name: Devops_resources_cicdpipeline
+name: Devops_resources_docker_pipeline
 
 on: push
 
 permissions:
   contents: read
-  pages: write
   id-token: write
 
 jobs:
-  #Build Job
-  build:
+  # Docker Build and Push Job
+  docker:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
-      - name: Install Node
-        uses: actions/setup-node@v3
-        with:
-          node-version: 20.x
-      - name: Install Dependencies
-        run: npm ci
-      - name: Build Project
-        run: npm run build
-      - name: Upload artifact to enable deployment
-        uses: actions/upload-artifact@v3
-        with:
-          name: production-files
-          path: ./build
-  # Deploy Job
-  deploy:
-    # Add a dependency to the build job
-    needs: build
-    # Specify runner + deployment step
-    runs-on: ubuntu-latest
-    steps:
-      - name: Download artifact
-        uses: actions/download-artifact@v3
-        with:
-          name: production-files
-          path: ./build
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.DEVOPS_RESOURCES_PIPELINE_TOKEN }}
-          publish_dir: ./build
 
       - name: Login to Docker Hub
         uses: docker/login-action@v3
@@ -54,7 +20,7 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
-      - name: Build and push
+      - name: Build and Push Docker Image
         uses: docker/build-push-action@v5
         with:
           push: true
