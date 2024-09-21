@@ -7,6 +7,7 @@ import pic1 from '../assets/sectionimages/yt/1.jpg';
 import pic2 from '../assets/sectionimages/yt/2.jpg';
 import pic3 from '../assets/sectionimages/yt/3.jpg';
 import pic4 from '../assets/sectionimages/yt/4.jpg';
+import pic5 from '../assets/sectionimages/yt/5.jpg';
 
 const YoutubeSection = () => {
   const playlists = [
@@ -20,7 +21,7 @@ const YoutubeSection = () => {
     },
     {
       id: 2,
-      title: 'Deploy React App (Vite) to GitHub Pages and Set up a workflow ofr Github Actions. ',
+      title: 'Deploy React App (Vite) to GitHub Pages and Set up a workflow of Github Actions. ',
       description: 'Learn how to configure your project, set up workflow, Vite config, and GitHub Pages. ',
       link: 'https://www.youtube.com/watch?app=desktop&v=Bk28snjHr7c',
       image: pic2,
@@ -38,9 +39,17 @@ const YoutubeSection = () => {
       id: 4,
       title: 'How To Deploy React App(with reactrouter) to gh-pages (Simplest Way) - gh-pages issue fixed',
       description: 'Explained step-by-step how you can host your reactjs project on gh pages for free.',
-      link: 'https://www.youtube.com/playlist?list=PL9gnSGHSqcnoqBXdMwUTRod4Gi3eac2Ak',
+      link: 'https://www.youtube.com/watch?v=hrwl5jVcfXc',
       image: pic4,
       alt: 'Deploy React App(with reactrouter) to gh-pages',
+    },
+    {
+      id: 5,
+      title: 'ArgoCD Tutorial for Beginners | GitOps CD for Kubernetes with Hands on Demo. ',
+      description: 'This ArgoCD crash course teaches you everything to get started with ArgoCD. ',
+      link: 'https://www.youtube.com/watch?v=MeU5_k9ssrs',
+      image: pic5,
+      alt: 'ArgoCD Tutorial for Beginners | GitOps CD for Kubernetes ',
     }
   ];
   const { isDarkMode } = useContext(ThemeContext);
