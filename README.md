@@ -4,7 +4,7 @@ Welcome to the **DevOps Resources Hub** - an interactive platform built with Rea
 
 ## 🌐 Live Site
 The project is hosted and publicly available at:  
-[DevOps Resources Hub](https://ashmit4818.github.io/DevOps_Resources_Project/)
+[DevOps Resources Hub](https://dev-ops-resources-project.vercel.app/)
 
 ## 📂 Repository
 The complete code for the project can be found in the following GitHub repository:  
