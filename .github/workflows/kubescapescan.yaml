@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v2
       
       - name: Install Kubescape
-        run: curl -s https://raw.githubusercontent. com/armosec/kubescape/master/install.sh | /bin/bash
+        run: curl -s https://raw.githubusercontent.com/kubescape/kubescape/master/install.sh | /bin/bash
         
       - name: Scan YAML files
         run: kubescape scan framework nsa *.yaml
