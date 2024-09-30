@@ -56,7 +56,7 @@ To run the project locally without Docker, follow these steps:
    ```
    
 4. **Visit the app**
-   Open your browser and visit http://localhost:3000/DevOps_Resources_Project to see the app in action.
+   Open your browser and visit http://localhost:3000/ to see the app in action.
 
 
 ## 🐳 Running the Project via Docker
@@ -78,7 +78,7 @@ You can pull the Docker image for this project from Docker Hub and run it locall
 3. **Access the application:**
    Once the container is running, you can access the application by opening your browser and navigating to:  
    ```bash
-   http://localhost:3000/DevOps_Resources_Project
+   http://localhost:3000/
    ```
    
 ## 📝 Contributing
