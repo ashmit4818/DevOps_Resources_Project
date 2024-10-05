@@ -38,56 +38,60 @@ const DockerDocsSection = () => {
 
   return (
     <Container style={{ padding: '20px', paddingTop: '5%', paddingBottom: '5%' }}>
-      <Typography variant="h4" gutterBottom align="center" sx={{ mb: '5%' }}>
-        Docker Docs Resources
-      </Typography>
-      <Grid container spacing={3}>
-        {cardData.map(({ id, title, description, image, alt, link }) => (
-          <Grid item size={{ xs: 12, sm: 6, md: 4 }} key={id}>
-            <Card>
-              <CardMedia
-                component="img"
-                height="100%"
-                image={image}
-                alt={alt}
+    <Typography variant="h4" gutterBottom align="center" sx={{ mb: '5%' }}>
+    Docker Docs Resources
+    </Typography>
+    <Grid container spacing={3}>
+      {cardData.map(({ id, title, description, link, image, alt }) => (
+        <Grid item size={{ xs: 12, sm: 6, md: 4 }} key={id}>
+          {/* //styles will change after theme */}
+          <Card style={{ backgroundColor: "#121212", color: "#fff"}}>
+            <CardMedia
+              component="img"
+              height="100%"
+              image={image}
+              alt={alt}
+              sx={{
+                backgroundColor: isDarkMode ? '#333' : '#333',
+              }}
+            />
+            <CardContent>
+              <Typography variant="h6" gutterBottom align="center">
+                {title}
+              </Typography>
+              <Typography variant="body2" align="center">
+                {description}
+              </Typography>
+              <Typography variant="body2" align="center" sx={{ mt: 2 }}>
+              <Button
+                variant="contained"
+                color="primary"
+                href={link}
+                target="_blank"
+                rel="noopener noreferrer"
                 sx={{
-                  backgroundColor: isDarkMode ? '#333' : '#fff',
+                  textDecoration: 'none',
+                  borderRadius: '10px',
+                  //switch '' second to create theme
+                  backgroundColor: isDarkMode? '#333':'#333',
+                  color: isDarkMode? '#fff':'',
+                  padding: '10px 20px',
+                  transition: 'background-color 0.3s ease',
+                  '&:hover': {
+                    //switch 1b3887 second to create theme
+                    backgroundColor: isDarkMode? '#262626':'#000',
+                  },
                 }}
-              />
-              <CardContent>
-                <Typography variant="h6" gutterBottom align="center">
-                  {title}
-                </Typography>
-                <Typography variant="body2" align="center">
-                  {description}
-                </Typography>
-                <Typography variant="body2" align="center" sx={{ mt: 2 }}>
-                <Button
-                  variant="contained"
-                  href={link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  sx={{
-                    textDecoration: 'none',
-                    borderRadius: '10px',
-                    backgroundColor: isDarkMode? '#333':'',
-                    color: isDarkMode? '#fff':'',
-                    padding: '10px 20px',
-                    transition: 'background-color 0.3s ease',
-                    '&:hover': {
-                      backgroundColor: isDarkMode? '#262626':'#1b3887',
-                    },
-                  }}
-                >
-                  Read on Docker Docs
-                </Button>
-                </Typography>
-              </CardContent>
-            </Card>
-          </Grid>
-        ))}
-      </Grid>
-    </Container>
+              >
+                Read on Docker Docs
+              </Button>
+              </Typography>
+            </CardContent>
+          </Card>
+        </Grid>
+      ))}
+    </Grid>
+  </Container>
   );
 };
 

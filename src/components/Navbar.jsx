@@ -21,14 +21,15 @@ const Navbar = ({ isMobile }) => {
   };
 
   // Apply active link styles based on current location
-  const isActive = (path) => location.pathname === path ? { backgroundColor: isDarkMode ?  '#333' : '#064cae' , color: '#fff' } : {};
+  const isActive = (path) => location.pathname === path ? { backgroundColor: isDarkMode ?  '#333' : 'rgb(18, 18, 18)' , color: '#fff' } : {};
 
   // Drawer content for mobile view
   const drawer = (
     <Box
       sx={{
         width: 250,
-        backgroundColor: isDarkMode ? '#000' : '#1b3887',
+        //switch 1b3887 second to create theme
+        backgroundColor: isDarkMode ? '#000':  '#000',
         color: '#fff',
         height: '100%',
         paddingTop: '20px',
@@ -90,7 +91,9 @@ const Navbar = ({ isMobile }) => {
       <AppBar
         position="static"
         sx={{
-          backgroundColor: isDarkMode ? '#000' : '#1b3887',
+          //switch 1b3887 second to create theme
+        backgroundColor: isDarkMode ? '#000':  '#000',
+         
           color: '#fff',
           mb : isMobile ? '8%' : '0',
         }}
@@ -118,10 +121,10 @@ const Navbar = ({ isMobile }) => {
 
           {/* Links for larger screens */}
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-            <Button color="inherit" component={Link} to="/" sx={isActive('')}>
+            <Button  color="inherit" component={Link} to="/" sx={isActive('')}>
               Home
             </Button>
-            <Button color="inherit" component={Link} to="/youtube" sx={isActive('/youtube')}>
+            <Button  color="inherit" component={Link} to="/youtube" sx={isActive('/youtube')}>
               YouTube
             </Button>
             <Button color="inherit" component={Link} to="/docker-docs" sx={isActive('/docker-docs')}>

@@ -38,9 +38,9 @@ function App() {
   return (
     <ThemeProvider>
     <Router basename='/'>
-      <div id="root">
+      <div id="root" style={{backgroundColor: '#000'}}>
         <Navbar isMobile={isMobile}/>
-        <main>
+        <main style={{backgroundColor: '#000'}}>
         {!isMobile && <Cursor />} {/* Only render Cursor if not on mobile */}
           <Routes>
             <Route exact path="/" element={<Home isMobile={isMobile} />} />

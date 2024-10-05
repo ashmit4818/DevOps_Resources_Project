@@ -94,7 +94,7 @@ const Home = ({isMobile}) => {
           {/* Docker Docs Card */}
           <Grid item size={{ xs: 12, sm: 6, md: 4 }}>
             <Link to="/docker-docs" style={{ textDecoration: 'none' }}>
-              <Card>
+              <Card style={{ backgroundColor: "#121212", color: "#fff"}}>
                 <CardMedia
                   component="img"
                   height="100%"
@@ -119,7 +119,7 @@ const Home = ({isMobile}) => {
           {/* Free Code Camp Card */}
           <Grid item size={{ xs: 12, sm: 6, md: 4 }}>
             <Link to="/blogs" style={{ textDecoration: 'none' }}>
-              <Card>
+              <Card style={{ backgroundColor: "#121212", color: "#fff"}}>
                 <CardMedia
                   component="img"
                   height="100%"
@@ -141,7 +141,7 @@ const Home = ({isMobile}) => {
           {/* Medium Articles Card */}
           <Grid item size={{ xs: 12, sm: 6, md: 4 }}>
             <Link to="/medium-articles" style={{ textDecoration: 'none' }}>
-              <Card>
+              <Card style={{ backgroundColor: "#121212", color: "#fff"}}>
                 <CardMedia
                   component="img"
                   height="100%"
@@ -163,7 +163,7 @@ const Home = ({isMobile}) => {
           {/* YouTube Playlists Card */}
           <Grid item size={{ xs: 12, sm: 6, md: 4 }}>
             <Link to="/youtube" style={{ textDecoration: 'none' }}>
-              <Card>
+              <Card style={{ backgroundColor: "#121212", color: "#fff"}}>
                 <CardMedia
                   component="img"
                   height="100%"
@@ -185,7 +185,7 @@ const Home = ({isMobile}) => {
           {/* GitHub Blogs Card */}
           <Grid item size={{ xs: 12, sm: 6, md: 4 }}>
             <Link to="/github" style={{ textDecoration: 'none' }}>
-              <Card>
+              <Card style={{ backgroundColor: "#121212", color: "#fff"}}>
                 <CardMedia
                   component="img"
                   height="100%"
@@ -206,7 +206,7 @@ const Home = ({isMobile}) => {
 
           <Grid item size={{ xs: 12, sm: 6, md: 4 }}>
             <Link to="/random-blogs" style={{ textDecoration: 'none' }}>
-              <Card>
+              <Card style={{ backgroundColor: "#121212", color: "#fff"}}>
                 <CardMedia
                   component="img"
                   height="100%"

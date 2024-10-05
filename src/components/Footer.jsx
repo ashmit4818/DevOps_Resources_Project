@@ -10,7 +10,8 @@ const Footer = ({ isMobile }) => {
     <Box
       component="footer"
       sx={{
-        backgroundColor: isDarkMode ? '#000':  '#1b3887',
+        //switch 1b3887 second to create theme
+        backgroundColor: isDarkMode ? '#000':  '#000',
         color: '#fff',
         py: 2,
         mt: isMobile ? '12%' : 'auto',

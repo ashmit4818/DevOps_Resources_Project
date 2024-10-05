@@ -38,19 +38,20 @@ const GithubBlogsSection = () => {
   return (
     <Container style={{ padding: '20px', paddingTop: '5%', paddingBottom: '5%' }}>
       <Typography variant="h4" gutterBottom align="center" sx={{ mb: '5%' }}>
-        GitHub
+      GitHub
       </Typography>
       <Grid container spacing={3}>
         {githubBlogs.map(({ id, title, description, link, image, alt }) => (
           <Grid item size={{ xs: 12, sm: 6, md: 4 }} key={id}>
-            <Card >
+            {/* //styles will change after theme */}
+            <Card style={{ backgroundColor: "#121212", color: "#fff"}}>
               <CardMedia
                 component="img"
                 height="100%"
                 image={image}
                 alt={alt}
                 sx={{
-                  backgroundColor: isDarkMode ? '#333' : '#fff',
+                  backgroundColor: isDarkMode ? '#333' : '#333',
                 }}
               />
               <CardContent>
@@ -70,12 +71,14 @@ const GithubBlogsSection = () => {
                   sx={{
                     textDecoration: 'none',
                     borderRadius: '10px',
-                    backgroundColor: isDarkMode? '#333':'',
+                    //switch '' second to create theme
+                    backgroundColor: isDarkMode? '#333':'#333',
                     color: isDarkMode? '#fff':'',
                     padding: '10px 20px',
                     transition: 'background-color 0.3s ease',
                     '&:hover': {
-                      backgroundColor: isDarkMode? '#262626':'#1b3887',
+                      //switch 1b3887 second to create theme
+                      backgroundColor: isDarkMode? '#262626':'#000',
                     },
                   }}
                 >
