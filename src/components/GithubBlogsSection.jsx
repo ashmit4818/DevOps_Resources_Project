@@ -43,6 +43,7 @@ const GithubBlogsSection = () => {
       <Grid container spacing={3}>
         {githubBlogs.map(({ id, title, description, link, image, alt }) => (
           <Grid item size={{ xs: 12, sm: 6, md: 4 }} key={id}>
+            
             {/* //styles will change after theme */}
             <Card style={{ backgroundColor: "#121212", color: "#fff"}}>
               <CardMedia
